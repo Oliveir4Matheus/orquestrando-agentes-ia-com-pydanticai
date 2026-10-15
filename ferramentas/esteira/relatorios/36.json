@@ -1,0 +1,9 @@
+{"capitulo": "36",
+ "simbolos": [
+  {"chave": "dataclass", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "Case", "status": "apontado_para", "onde": "capítulo 0.3 e capítulo 30", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![As quatro dimensões da avaliação em produção](img/cap36-quatro-dimensoes.png)"},
+  {"tipo": "secao", "titulo": "Por que `Registro` é um `dataclass`, e não um `BaseModel`", "apos": "O `Registro` guarda, por atendimento"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

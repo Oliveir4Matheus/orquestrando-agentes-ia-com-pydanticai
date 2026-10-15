@@ -1,0 +1,15 @@
+{"capitulo": "21",
+ "simbolos": [
+  {"chave": "Agent/.output/instructions", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": ".override", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "output_type", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "async/await/.run/Callable/Awaitable", "status": "apontado_para", "onde": "capítulo 0.2", "obs": "nota na caixa Antes de começar"},
+  {"chave": "BaseModel", "status": "apontado_para", "onde": "capítulo 0.3", "obs": ""},
+  {"chave": "Literal", "status": "explicado_aqui", "onde": "### Por que `Rota` usa `Literal`", "obs": "exemplo rota_literal.py"}
+ ],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "imagem de abertura"},
+  {"tipo": "secao", "titulo": "### Por que `Rota` usa `Literal`", "apos": "> **Nota:** O registro `REGISTRO`"}
+ ],
+ "imagens": [],
+ "correcoes_sugeridas": []}

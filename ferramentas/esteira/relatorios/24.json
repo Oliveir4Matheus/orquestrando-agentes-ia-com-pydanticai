@@ -1,0 +1,12 @@
+{"capitulo": "24",
+ "simbolos": [
+  {"chave": ".output_validator", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "@output_validator", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "Tool", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "Tool(description=)", "status": "apontado_para", "onde": "capítulo 0.6", "obs": "lembrete + exemplo"},
+  {"chave": "Tool(name=)", "status": "apontado_para", "onde": "capítulo 0.6", "obs": "lembrete + exemplo"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Supervisor e colaboradores](img/cap24-supervisor-e-colaboradores.png)"},
+  {"tipo": "secao", "titulo": "Lembrete Tool(name, description) e ferramentas_do_supervisor.py", "apos": "**O modo `coordenar`.**"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

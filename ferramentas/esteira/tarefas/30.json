@@ -1,0 +1,22 @@
+{
+ "id": "30",
+ "arquivo": "modulo-09/30-tarefas-tentativas-e-avaliadores.md",
+ "modulo": 9,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "Case",
+  "Case(expected_output=)",
+  "Case(inputs=)",
+  "Case(name=)",
+  "Dataset",
+  "Dataset(cases=)",
+  "Dataset(evaluators=)",
+  "Dataset(name=)",
+  "Evaluator",
+  "EvaluatorContext",
+  "MaxToolCalls",
+  "MaxToolCalls(max_calls=)"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

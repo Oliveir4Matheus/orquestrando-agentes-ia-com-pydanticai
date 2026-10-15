@@ -1,0 +1,15 @@
+{
+ "id": "0.1",
+ "arquivo": "modulo-00/0.1-o-ecossistema-pydantic.md",
+ "modulo": 0,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "pydantic",
+  "pydantic_ai",
+  "pydantic_evals",
+  "pydantic_graph",
+  "logfire"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

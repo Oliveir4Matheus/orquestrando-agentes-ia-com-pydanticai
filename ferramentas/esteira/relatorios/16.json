@@ -1,0 +1,10 @@
+{"capitulo": "16",
+ "simbolos": [
+  {"chave": "BaseModel", "status": "apontado_para", "onde": "capítulo 0.3", "obs": "usado no exemplo novo dataset_pydantic.py; explicado na seção nova e na caixa Antes de começar"}
+ ],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Ajuste fino com LoRA](img/cap16-lora.png)"},
+  {"tipo": "secao", "titulo": "Validando o arquivo JSONL com Pydantic", "apos": "o ajuste só se justifica se o número de falhas de formato ou de comportamento cair de forma mensurável."}
+ ],
+ "imagens": [],
+ "correcoes_sugeridas": []}

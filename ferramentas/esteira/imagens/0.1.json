@@ -1,0 +1,6 @@
+[
+ {"arquivo": "modulo-00/img/cap0-1-mapa-do-ecossistema.png",
+  "prompt": "Diagrama em camadas mostrando o ecossistema usado no livro. Na base, um bloco largo com o rótulo 'pydantic — validação de dados'. Acima dele, um bloco central com o rótulo 'pydantic_ai — agentes'. Em volta do bloco central, três blocos menores ligados a ele por setas simples: à esquerda 'pydantic_evals — avaliar', acima 'pydantic_graph — encadear passos', à direita 'logfire — observar'. Setas sem cruzamento. Nenhum outro texto além desses rótulos."},
+ {"arquivo": "modulo-00/img/cap0-1-perguntas-de-apoio.png",
+  "prompt": "Três colunas lado a lado, cada uma com um balão de pergunta no topo e um bloco de resposta embaixo, ligados por uma seta para baixo. Coluna 1: balão 'O agente acerta?' e bloco 'pydantic_evals'. Coluna 2: balão 'Qual passo vem depois?' e bloco 'pydantic_graph'. Coluna 3: balão 'O que ele fez?' e bloco 'logfire'. Nenhum outro texto além desses rótulos."}
+]

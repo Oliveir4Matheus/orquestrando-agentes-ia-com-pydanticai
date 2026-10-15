@@ -1,0 +1,11 @@
+{"capitulo": "5",
+ "simbolos": [
+  {"chave": "Agent(tools=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Agent(tools=)`", "obs": ""},
+  {"chave": ".override", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "py:lambda", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "py:with", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![O ciclo ReAct](img/cap5-react.png)"},
+  {"tipo": "por_dentro", "titulo": "Agent(tools=)", "apos": "O argumento `tools=` registra funções já existentes"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

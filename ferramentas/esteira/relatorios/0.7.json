@@ -1,0 +1,20 @@
+{"capitulo": "0.7",
+ "simbolos": [
+  {"chave": "RunContext", "status": "explicado_aqui", "onde": "Capítulo 0.7 — As peças, uma de cada vez", "obs": "dependencias_deps.py"},
+  {"chave": "RunContext[...]", "status": "explicado_aqui", "onde": "Capítulo 0.7 — As peças, uma de cada vez", "obs": "RunContext[Loja]"},
+  {"chave": "Agent[...]", "status": "explicado_aqui", "onde": "Capítulo 0.7 — Tipos que o editor confere: Agent[...]", "obs": "dependencias_tipos.py; sem verificador no venv, erro do mypy citado da documentação"},
+  {"chave": "Agent(deps_type=)", "status": "explicado_aqui", "onde": "Capítulo 0.7 — As peças, uma de cada vez", "obs": ""},
+  {"chave": "deps_type", "status": "explicado_aqui", "onde": "Capítulo 0.7 — As peças, uma de cada vez", "obs": "atributo atendente.deps_type mostrado em dependencias_tipos.py"},
+  {"chave": ".deps", "status": "explicado_aqui", "onde": "Capítulo 0.7 — As peças, uma de cada vez", "obs": "inclui armadilha do deps=None e mutação do objeto"},
+  {"chave": "@instructions", "status": "explicado_aqui", "onde": "Capítulo 0.7 — Instruções que dependem da execução", "obs": "instrucoes_dinamicas.py"},
+  {"chave": ".instructions", "status": "explicado_aqui", "onde": "Capítulo 0.7 — Instruções que dependem da execução", "obs": "Agent.instructions (decorador) e AgentInfo.instructions (texto final)"},
+  {"chave": ".retry", "status": "explicado_aqui", "onde": "Capítulo 0.7 — O que mais o contexto sabe: .retry", "obs": "contexto_retry.py; também max_retries e run_step"}
+ ],
+ "adicoes": [
+  {"tipo": "secao", "titulo": "Capítulo 0.7 — Dependências e contexto (capítulo novo, inteiro)", "apos": "início do arquivo"},
+  {"tipo": "imagem", "titulo": "As dependências entram na execução e chegam às funções pelo contexto", "apos": "parágrafo de introdução"},
+  {"tipo": "imagem", "titulo": "Produção e teste com override(deps=)", "apos": "## Por que injetar, e como isso facilita o teste"},
+  {"tipo": "exercicio", "titulo": "Faça você mesmo 0.7.1 a 0.7.12", "apos": "fim de cada seção ##"}
+ ],
+ "imagens": ["modulo-00/img/cap0-7-dependencias-no-contexto.png", "modulo-00/img/cap0-7-override-deps.png"],
+ "correcoes_sugeridas": []}

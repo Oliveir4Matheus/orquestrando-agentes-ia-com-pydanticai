@@ -1,0 +1,13 @@
+{
+ "id": "22",
+ "arquivo": "modulo-07/22-gerente-e-transferencia.md",
+ "modulo": 7,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  "Agent(name=)": "0.4"
+ },
+ "donos_modulo0": [
+  "0.4"
+ ]
+}

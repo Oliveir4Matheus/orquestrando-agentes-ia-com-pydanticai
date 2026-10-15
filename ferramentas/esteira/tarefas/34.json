@@ -1,0 +1,13 @@
+{
+ "id": "34",
+ "arquivo": "modulo-10/34-observabilidade.md",
+ "modulo": 10,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  "logfire": "0.1"
+ },
+ "donos_modulo0": [
+  "0.1"
+ ]
+}

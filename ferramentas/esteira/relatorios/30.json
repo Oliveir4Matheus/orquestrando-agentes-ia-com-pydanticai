@@ -1,0 +1,116 @@
+{
+ "capitulo": "30",
+ "simbolos": [
+  {
+   "chave": "Case",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Case`",
+   "obs": ""
+  },
+  {
+   "chave": "Case(expected_output=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Case(expected_output=)`",
+   "obs": ""
+  },
+  {
+   "chave": "Case(inputs=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Case(inputs=)`",
+   "obs": ""
+  },
+  {
+   "chave": "Case(name=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Case(name=)`",
+   "obs": ""
+  },
+  {
+   "chave": "Dataset",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Dataset`",
+   "obs": ""
+  },
+  {
+   "chave": "Dataset(cases=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Dataset(cases=)`",
+   "obs": ""
+  },
+  {
+   "chave": "Dataset(evaluators=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Dataset(evaluators=)`",
+   "obs": ""
+  },
+  {
+   "chave": "Dataset(name=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Dataset(name=)`",
+   "obs": ""
+  },
+  {
+   "chave": "Evaluator",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `Evaluator`",
+   "obs": ""
+  },
+  {
+   "chave": "EvaluatorContext",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `EvaluatorContext`",
+   "obs": ""
+  },
+  {
+   "chave": "MaxToolCalls",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `MaxToolCalls`",
+   "obs": ""
+  },
+  {
+   "chave": "MaxToolCalls(max_calls=)",
+   "status": "explicado_aqui",
+   "onde": "Por dentro — `MaxToolCalls(max_calls=)`",
+   "obs": ""
+  }
+ ],
+ "adicoes": [
+  {
+   "tipo": "antes_de_comecar",
+   "titulo": "Antes de começar — PydanticAI neste capítulo",
+   "apos": "![Vocabulário de avaliação]"
+  },
+  {
+   "tipo": "por_dentro",
+   "titulo": "Evaluator",
+   "apos": "escondem a qualidade real do agente."
+  },
+  {
+   "tipo": "por_dentro",
+   "titulo": "EvaluatorContext",
+   "apos": "escondem a qualidade real do agente."
+  },
+  {
+   "tipo": "por_dentro",
+   "titulo": "Case",
+   "apos": "O método `evaluate_sync(tarefa)` executa tudo e devolve um relatório."
+  },
+  {
+   "tipo": "por_dentro",
+   "titulo": "Dataset",
+   "apos": "O método `evaluate_sync(tarefa)` executa tudo e devolve um relatório."
+  },
+  {
+   "tipo": "por_dentro",
+   "titulo": "MaxToolCalls",
+   "apos": "O método `evaluate_sync(tarefa)` executa tudo e devolve um relatório."
+  },
+  {
+   "tipo": "secao",
+   "titulo": "avaliacao_minima_sem_agente.py",
+   "apos": "MaxToolCalls"
+  }
+ ],
+ "imagens": [],
+ "correcoes_sugeridas": []
+}

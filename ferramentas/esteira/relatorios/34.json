@@ -1,0 +1,6 @@
+{"capitulo": "34",
+ "simbolos": [{"chave": "logfire", "status": "apontado_para", "onde": "capítulo 0.1", "obs": ""}],
+ "adicoes": [{"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![O rastro de uma execução]"},
+  {"tipo": "secao", "titulo": "Lembrete sobre FunctionModel", "apos": "Aí está a história da execução em quatro linhas."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

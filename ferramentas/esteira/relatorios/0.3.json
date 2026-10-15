@@ -1,0 +1,208 @@
+{
+ "capitulo": "0.3",
+ "simbolos": [
+  {
+   "chave": "BaseModel",
+   "status": "explicado_aqui",
+   "onde": "## `BaseModel` e `Field`: um contrato que se defende",
+   "obs": "pydantic_modelo.py; herança, campos obrigatórios"
+  },
+  {
+   "chave": "Field",
+   "status": "explicado_aqui",
+   "onde": "## `BaseModel` e `Field`: um contrato que se defende",
+   "obs": "default, gt, ge, le, min_length, description; tabela"
+  },
+  {
+   "chave": "ValidationError",
+   "status": "explicado_aqui",
+   "onde": "### Lendo uma `ValidationError`",
+   "obs": "error_count, errors, loc/type/msg; vários erros de uma vez"
+  },
+  {
+   "chave": "model_validate",
+   "status": "explicado_aqui",
+   "onde": "## Dados que chegam: `model_validate` e `model_validate_json`",
+   "obs": "pydantic_entrada.py"
+  },
+  {
+   "chave": "model_validate_json",
+   "status": "explicado_aqui",
+   "onde": "## Dados que chegam: `model_validate` e `model_validate_json`",
+   "obs": "greater_than e json_invalid"
+  },
+  {
+   "chave": "model_dump",
+   "status": "explicado_aqui",
+   "onde": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`",
+   "obs": "include/exclude"
+  },
+  {
+   "chave": "model_dump_json",
+   "status": "explicado_aqui",
+   "onde": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`",
+   "obs": "JSON compacto"
+  },
+  {
+   "chave": "model_json_schema",
+   "status": "explicado_aqui",
+   "onde": "## `model_json_schema`: o contrato em formato que o modelo lê",
+   "obs": "pydantic_esquema.py; correspondência Field → palavras-chave"
+  },
+  {
+   "chave": "field_validator",
+   "status": "explicado_aqui",
+   "onde": "## Regras próprias: `field_validator` e `model_validator`",
+   "obs": "pydantic_validadores.py; @classmethod, return obrigatório"
+  },
+  {
+   "chave": "model_validator",
+   "status": "explicado_aqui",
+   "onde": "## Regras próprias: `field_validator` e `model_validator`",
+   "obs": "mode='after', return self, loc vazio"
+  },
+  {
+   "chave": "TypeAdapter",
+   "status": "explicado_aqui",
+   "onde": "## `TypeAdapter`: validar o que não é `BaseModel`",
+   "obs": "pydantic_type_adapter.py; tabela de correspondência com BaseModel"
+  },
+  {
+   "chave": ".validate_json",
+   "status": "explicado_aqui",
+   "onde": "## `TypeAdapter`: validar o que não é `BaseModel`",
+   "obs": "list[Item]"
+  },
+  {
+   "chave": ".validate_python",
+   "status": "explicado_aqui",
+   "onde": "## `TypeAdapter`: validar o que não é `BaseModel`",
+   "obs": "Annotated[int, Field(ge=1, le=5)]"
+  },
+  {
+   "chave": ".dump_json",
+   "status": "explicado_aqui",
+   "onde": "## `TypeAdapter`: validar o que não é `BaseModel`",
+   "obs": "devolve bytes"
+  },
+  {
+   "chave": ".dump_python",
+   "status": "explicado_aqui",
+   "onde": "## `TypeAdapter`: validar o que não é `BaseModel`",
+   "obs": ""
+  },
+  {
+   "chave": ".model_dump",
+   "status": "explicado_aqui",
+   "onde": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`",
+   "obs": ""
+  },
+  {
+   "chave": ".model_dump_json",
+   "status": "explicado_aqui",
+   "onde": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`",
+   "obs": ""
+  },
+  {
+   "chave": ".model_validate",
+   "status": "explicado_aqui",
+   "onde": "## Dados que chegam: `model_validate` e `model_validate_json`",
+   "obs": ""
+  },
+  {
+   "chave": ".model_validate_json",
+   "status": "explicado_aqui",
+   "onde": "## Dados que chegam: `model_validate` e `model_validate_json`",
+   "obs": "também no ciclo do agente (pydantic_por_baixo.py)"
+  },
+  {
+   "chave": ".model_json_schema",
+   "status": "explicado_aqui",
+   "onde": "## `model_json_schema`: o contrato em formato que o modelo lê",
+   "obs": "igual ao parameters_json_schema da ferramenta de saída"
+  },
+  {
+   "chave": ".model_copy",
+   "status": "explicado_aqui",
+   "onde": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`",
+   "obs": "armadilha: update não valida"
+  }
+ ],
+ "adicoes": [
+  {
+   "tipo": "secao",
+   "titulo": "## `BaseModel` e `Field`: um contrato que se defende",
+   "apos": "imagem de abertura"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### Lendo uma `ValidationError`",
+   "apos": "## `BaseModel` e `Field`: um contrato que se defende"
+  },
+  {
+   "tipo": "armadilha",
+   "titulo": "### Armadilha: conversão não é adivinhação",
+   "apos": "### Lendo uma `ValidationError`"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Dados que chegam: `model_validate` e `model_validate_json`",
+   "apos": "### Faça você mesmo — `BaseModel` e `Field`"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`",
+   "apos": "### Faça você mesmo — entrada de dados"
+  },
+  {
+   "tipo": "armadilha",
+   "titulo": "### Armadilha: `model_copy` não valida",
+   "apos": "## Dados que saem: `model_dump`, `model_dump_json` e `model_copy`"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## `model_json_schema`: o contrato em formato que o modelo lê",
+   "apos": "### Faça você mesmo — saída de dados"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### Por baixo do PydanticAI",
+   "apos": "## `model_json_schema`: o contrato em formato que o modelo lê"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Regras próprias: `field_validator` e `model_validator`",
+   "apos": "### Faça você mesmo — esquema e agente"
+  },
+  {
+   "tipo": "armadilha",
+   "titulo": "### Armadilha: o validador que esquece o `return`",
+   "apos": "## Regras próprias: `field_validator` e `model_validator`"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## `TypeAdapter`: validar o que não é `BaseModel`",
+   "apos": "### Faça você mesmo — validadores"
+  },
+  {
+   "tipo": "exercicio",
+   "titulo": "0.3.1 a 0.3.13",
+   "apos": "fim de cada unidade"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-3-ciclo-de-validacao.png",
+   "apos": "introdução"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-3-validacao-no-agente.png",
+   "apos": "lista explicativa de pydantic_por_baixo.py"
+  }
+ ],
+ "imagens": [
+  "modulo-00/img/cap0-3-ciclo-de-validacao.png",
+  "modulo-00/img/cap0-3-validacao-no-agente.png"
+ ],
+ "correcoes_sugeridas": []
+}

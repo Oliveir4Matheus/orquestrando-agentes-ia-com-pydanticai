@@ -1,0 +1,14 @@
+{"capitulo": "15",
+ "simbolos": [
+  {"chave": "Embedder", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Embedder`", "obs": ""},
+  {"chave": "TestEmbeddingModel", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `TestEmbeddingModel`", "obs": ""},
+  {"chave": "TestEmbeddingModel(dimensions=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `TestEmbeddingModel`", "obs": "com exemplo embeddings_dimensoes.py"}
+ ],
+ "adicoes": [
+  {"tipo": "por_dentro", "titulo": "TestEmbeddingModel(dimensions=)", "apos": "Dois textos diferentes, o mesmo vetor"},
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![O fluxo do RAG](img/cap15-fluxo-do-rag.png)"},
+  {"tipo": "por_dentro", "titulo": "Embedder", "apos": "Mais nada muda no restante do código."},
+  {"tipo": "por_dentro", "titulo": "TestEmbeddingModel", "apos": "Por dentro do PydanticAI — `Embedder`"}
+ ],
+ "imagens": [],
+ "correcoes_sugeridas": []}

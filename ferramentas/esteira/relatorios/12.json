@@ -1,0 +1,6 @@
+{"capitulo": "12",
+ "simbolos": [{"chave": "ModelRetry", "status": "apontado_para", "onde": "capítulo 0.6", "obs": "Caixa Antes de começar; o texto já explica o efeito de ModelRetry."}],
+ "adicoes": [{"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Interface agente-computador](img/cap12-interface-agente-computador.png)"},
+  {"tipo": "armadilha", "titulo": "Armadilha: o `ModelRetry` tem limite", "apos": "Diga o que estava errado, o que seria certo e, quando fizer sentido, o próximo passo."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

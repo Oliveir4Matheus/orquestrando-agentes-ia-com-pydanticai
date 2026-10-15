@@ -1,0 +1,12 @@
+{"capitulo": "23",
+ "simbolos": [
+  {"chave": "Agent", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "BaseModel", "status": "apontado_para", "onde": "capítulo 0.3", "obs": ""},
+  {"chave": "FunctionModel", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "@agente.tool", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "RunContext", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Orquestrador em produção](img/cap23-orquestrador-em-producao.png)"},
+  {"tipo": "armadilha", "titulo": "Armadilha: campo obrigatório não é campo preenchido", "apos": "**O `usage=ctx.usage`.** Como no Capítulo 22, soma o consumo dos subagentes ao do líder."}],
+ "imagens": [],
+ "correcoes_sugeridas": [{"trecho": "O líder não consegue delegar de modo vago, porque o esquema não aceita campos em branco.", "problema": "O esquema rejeita campos ausentes, mas `str` aceita string vazia.", "sugestao": "Trocar por 'não aceita campos ausentes' ou usar Field(min_length=1) no Briefing."}]}

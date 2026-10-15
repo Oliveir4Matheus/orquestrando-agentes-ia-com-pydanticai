@@ -1,0 +1,89 @@
+21:20:46 INICIOU 0.1 (claude-opus-5-5:medium) task=task_041774236906 tentativa=1
+21:20:50 INICIOU 1 (claude-sonnet-5-5:medium) task=task_1c2b1612bf30 tentativa=1
+21:20:53 INICIOU 5 (claude-sonnet-5-5:medium) task=task_3e5df32c9d3e tentativa=1
+21:20:57 INICIOU 8 (claude-sonnet-5-5:medium) task=task_95fbf04192fc tentativa=1
+21:21:00 INICIOU 11 (claude-sonnet-5-5:medium) task=task_a94d127e0ec3 tentativa=1
+21:21:39 ACEITO 11 [sonnet-medium]
+21:21:43 INICIOU 12 (claude-sonnet-5-5:medium) task=task_5e9088bb84f4 tentativa=1
+21:21:47 ACEITO 1 [sonnet-medium]
+21:21:51 ACEITO 8 [sonnet-medium]
+21:21:54 INICIOU 2 (claude-sonnet-5-5:medium) task=task_781e967e1f52 tentativa=1
+21:21:58 INICIOU 9 (claude-sonnet-5-5:medium) task=task_04f58829eabb tentativa=1
+21:22:02 ACEITO 5 [sonnet-medium]
+21:22:06 INICIOU 6 (claude-sonnet-5-5:medium) task=task_d33a82fc8d44 tentativa=1
+21:22:28 ACEITO 12 [sonnet-medium]
+21:22:32 INICIOU 13 (claude-sonnet-5-5:medium) task=task_024cbd736ee5 tentativa=1
+21:23:00 ACEITO 9 [sonnet-medium]
+21:23:04 INICIOU 10 (claude-sonnet-5-5:medium) task=task_1d993e21ab78 tentativa=1
+21:23:12 ACEITO 2 [sonnet-medium]
+21:23:17 INICIOU 3 (claude-sonnet-5-5:medium) task=task_592006353f05 tentativa=1
+21:23:23 ACEITO 13 [sonnet-medium]
+21:23:27 INICIOU 14 (claude-sonnet-5-5:medium) task=task_f87cc1433c86 tentativa=1
+21:23:38 ACEITO 6 [sonnet-medium]
+21:23:42 INICIOU 7 (claude-sonnet-5-5:medium) task=task_e556c1a7b1fc tentativa=1
+21:23:46 ACEITO 10 [sonnet-medium]
+21:23:50 INICIOU 18 (claude-sonnet-5-5:medium) task=task_ad15b8964d25 tentativa=1
+21:24:06 ACEITO 14 [sonnet-medium]
+21:24:10 INICIOU 15 (claude-sonnet-5-5:medium) task=task_9b1c69ed740e tentativa=1
+21:24:20 ACEITO 3 [sonnet-medium]
+21:24:24 INICIOU 4 (claude-sonnet-5-5:medium) task=task_ad9f060c8c9c tentativa=1
+21:24:44 ACEITO 7 [sonnet-medium]
+21:24:48 INICIOU 22 (claude-sonnet-5-5:medium) task=task_4abb63c77ef4 tentativa=1
+21:24:52 ACEITO 18 [sonnet-medium]
+21:24:56 INICIOU 19 (claude-sonnet-5-5:medium) task=task_cdfe26860874 tentativa=1
+21:25:08 ACEITO 15 [sonnet-medium]
+21:25:12 INICIOU 16 (claude-sonnet-5-5:medium) task=task_18f974c9e159 tentativa=1
+21:25:13 ACEITO 22 [sonnet-medium]
+21:25:17 INICIOU 23 (claude-sonnet-5-5:medium) task=task_e79f0f61d664 tentativa=1
+21:25:21 ACEITO 4 [sonnet-medium]
+21:25:25 INICIOU 27 (claude-sonnet-5-5:medium) task=task_7318e400a774 tentativa=1
+21:25:40 ACEITO 0.1 [opus-medium]
+21:25:44 INICIOU 0.2 (claude-opus-5-5:medium) task=task_1b53eb14cf56 tentativa=1
+21:25:46 ACEITO 19 [sonnet-medium]
+21:25:50 INICIOU 20 (claude-sonnet-5-5:medium) task=task_4adfc121841e tentativa=1
+21:25:52 ACEITO 16 [sonnet-medium]
+21:25:55 INICIOU 17 (claude-sonnet-5-5:medium) task=task_55b4d9615c40 tentativa=1
+21:26:09 ACEITO 23 [sonnet-medium]
+21:26:12 INICIOU 24 (claude-sonnet-5-5:medium) task=task_eb22aaf412cf tentativa=1
+21:26:23 ACEITO 27 [sonnet-medium]
+21:26:28 INICIOU 28 (claude-sonnet-5-5:medium) task=task_46282920bcb1 tentativa=1
+21:26:33 ACEITO 17 [sonnet-medium]
+21:26:37 INICIOU 30 (claude-sonnet-5-5:medium) task=task_f9fdf78c117a tentativa=1
+21:26:40 ACEITO 20 [sonnet-medium]
+21:26:44 INICIOU 21 (claude-sonnet-5-5:medium) task=task_c458932d0fde tentativa=1
+21:26:58 ACEITO 28 [sonnet-medium]
+21:27:02 INICIOU 29 (claude-sonnet-5-5:medium) task=task_0ec619407374 tentativa=1
+21:27:24 ACEITO 24 [sonnet-medium]
+21:27:28 INICIOU 25 (claude-sonnet-5-5:medium) task=task_7363c44c438f tentativa=1
+21:27:30 ACEITO 21 [sonnet-medium]
+21:27:33 INICIOU 34 (claude-sonnet-5-5:medium) task=task_4983be0f45ea tentativa=1
+21:27:58 ACEITO 34 [sonnet-medium]
+21:28:02 INICIOU 35 (claude-sonnet-5-5:medium) task=task_3c058c0c8e03 tentativa=1
+21:28:11 ACEITO 25 [sonnet-medium]
+21:28:15 INICIOU 26 (claude-sonnet-5-5:medium) task=task_4bafd9b6ed3e tentativa=1
+21:28:55 ACEITO 29 [sonnet-medium]
+21:29:02 ACEITO 30 [sonnet-medium]
+21:29:06 INICIOU 31 (claude-sonnet-5-5:medium) task=task_6db18335fcb2 tentativa=1
+21:29:12 ACEITO 35 [sonnet-medium]
+21:29:16 INICIOU 36 (claude-sonnet-5-5:medium) task=task_365a7fc8e85f tentativa=1
+21:29:24 ACEITO 26 [sonnet-medium]
+21:29:53 ACEITO 36 [sonnet-medium]
+21:29:57 INICIOU 37 (claude-sonnet-5-5:medium) task=task_e9fda1b72eb5 tentativa=1
+21:30:25 ACEITO 31 [sonnet-medium]
+21:30:29 INICIOU 32 (claude-sonnet-5-5:medium) task=task_29702ae2cba8 tentativa=1
+21:30:40 ACEITO 0.2 [opus-medium]
+21:30:44 INICIOU 0.3 (claude-opus-5-5:medium) task=task_fc74804720ee tentativa=1
+21:30:48 ACEITO 37 [sonnet-medium]
+21:32:34 ACEITO 32 [sonnet-medium]
+21:32:38 INICIOU 33 (claude-sonnet-5-5:medium) task=task_ba02b640624b tentativa=1
+21:33:26 ACEITO 33 [sonnet-medium]
+21:34:43 ACEITO 0.3 [opus-medium]
+21:34:47 INICIOU 0.4 (claude-opus-5-5:medium) task=task_7cb9c5756206 tentativa=1
+21:40:58 ACEITO 0.4 [opus-medium]
+21:41:02 INICIOU 0.5 (claude-opus-5-5:medium) task=task_8aefd7b09fc6 tentativa=1
+21:47:05 ACEITO 0.5 [opus-medium]
+21:47:09 INICIOU 0.6 (claude-opus-5-5:medium) task=task_56b40e6d14ea tentativa=1
+21:52:55 ACEITO 0.6 [opus-medium]
+21:52:59 INICIOU 0.7 (claude-opus-5-5:medium) task=task_32a8aff78df0 tentativa=1
+21:57:31 ACEITO 0.7 [opus-medium]
+21:57:31 FIM: {'aceito': 44}

@@ -1,0 +1,18 @@
+{
+ "id": "2",
+ "arquivo": "modulo-01/02-modelo-ferramentas-instrucoes.md",
+ "modulo": 1,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  ".function_tools": "0.5",
+  "AgentInfo": "0.5",
+  "FunctionModel": "0.5",
+  "ModelResponse": "0.5",
+  "ModelResponse(parts=)": "0.5",
+  "TextPart": "0.5"
+ },
+ "donos_modulo0": [
+  "0.5"
+ ]
+}

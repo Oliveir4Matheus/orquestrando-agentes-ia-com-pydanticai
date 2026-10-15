@@ -1,0 +1,19 @@
+{
+ "id": "0.7",
+ "arquivo": "modulo-00/0.7-dependencias-e-contexto.md",
+ "modulo": 0,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "RunContext",
+  "RunContext[...]",
+  "Agent[...]",
+  "Agent(deps_type=)",
+  "deps_type",
+  ".deps",
+  "@instructions",
+  ".instructions",
+  ".retry"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

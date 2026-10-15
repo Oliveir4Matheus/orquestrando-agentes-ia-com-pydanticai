@@ -1,0 +1,24 @@
+{"capitulo": "0.1",
+ "simbolos": [
+  {"chave": "pydantic", "status": "explicado_aqui", "onde": "## A base: `pydantic`", "obs": "exemplo ecossistema_pydantic.py (BaseModel, conversão de tipo, ValidationError)"},
+  {"chave": "pydantic_ai", "status": "explicado_aqui", "onde": "## O framework: `pydantic_ai`", "obs": "exemplo ecossistema_agente.py com TestModel e output_type"},
+  {"chave": "pydantic_evals", "status": "explicado_aqui", "onde": "### Avaliar: `pydantic_evals`", "obs": "exemplo ecossistema_evals.py (Dataset, Case, EqualsExpected)"},
+  {"chave": "pydantic_graph", "status": "explicado_aqui", "onde": "### Encadear passos: `pydantic_graph`", "obs": "exemplo ecossistema_grafo.py com GraphBuilder (API atual; Graph(nodes=...) não existe mais na 2.54)"},
+  {"chave": "logfire", "status": "explicado_aqui", "onde": "### Observar: `logfire`", "obs": "exemplo ecossistema_logfire.py offline: send_to_logfire=False e InMemorySpanExporter"}
+ ],
+ "adicoes": [
+  {"tipo": "secao", "titulo": "## Instalar e conferir o ambiente", "apos": "imagem de abertura"},
+  {"tipo": "armadilha", "titulo": "### Armadilha: o extra que faltou", "apos": "### Instalação enxuta: `pydantic-ai-slim` com extras"},
+  {"tipo": "secao", "titulo": "## A base: `pydantic`", "apos": "### Faça você mesmo (0.1.1-0.1.2)"},
+  {"tipo": "secao", "titulo": "## O framework: `pydantic_ai`", "apos": "## A base: `pydantic`"},
+  {"tipo": "secao", "titulo": "## As três bibliotecas de apoio", "apos": "### Faça você mesmo (0.1.3-0.1.4)"},
+  {"tipo": "secao", "titulo": "## Como ler os exemplos do livro", "apos": "### Faça você mesmo (0.1.5-0.1.7)"},
+  {"tipo": "secao", "titulo": "## O mapa do Módulo 0", "apos": "## Como ler os exemplos do livro"},
+  {"tipo": "exercicio", "titulo": "0.1.1 a 0.1.8", "apos": "fim de cada unidade"},
+  {"tipo": "imagem", "titulo": "cap0-1-mapa-do-ecossistema.png", "apos": "introdução"},
+  {"tipo": "imagem", "titulo": "cap0-1-perguntas-de-apoio.png", "apos": "## As três bibliotecas de apoio"}
+ ],
+ "imagens": ["modulo-00/img/cap0-1-mapa-do-ecossistema.png", "modulo-00/img/cap0-1-perguntas-de-apoio.png"],
+ "correcoes_sugeridas": [
+  {"trecho": "README.md: pip install \"pydantic-ai-slim[anthropic,mcp]\" fastmcp pydantic-evals logfire", "problema": "Funciona, mas o capítulo 0.1 mostra a forma equivalente com extras (pydantic-ai-slim[anthropic,mcp,evals,logfire]); vale o autor decidir qual forma padronizar.", "sugestao": "Opcional: manter como está ou unificar com extras."}
+ ]}

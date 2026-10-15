@@ -1,0 +1,8 @@
+{"capitulo": "35",
+ "simbolos": [{"chave": ".iter", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `.iter`", "obs": ""},
+  {"chave": "py:async for", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "py:async with", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""}],
+ "adicoes": [{"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Execução durável]"},
+  {"tipo": "por_dentro", "titulo": "Por dentro do PydanticAI — `.iter`", "apos": "4. **Limpeza.**"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

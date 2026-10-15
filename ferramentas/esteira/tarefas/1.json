@@ -1,0 +1,24 @@
+{
+ "id": "1",
+ "arquivo": "modulo-01/01-chatbot-workflow-agente.md",
+ "modulo": 1,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  ".output": "0.4",
+  ".requests": "0.4",
+  ".run_sync": "0.4",
+  ".tool_plain": "0.6",
+  ".usage": "0.4",
+  "@tool_plain": "0.6",
+  "Agent": "0.4",
+  "Agent(instructions=)": "0.4",
+  "py:X | None": "0.2",
+  "py:docstring": "0.2"
+ },
+ "donos_modulo0": [
+  "0.2",
+  "0.4",
+  "0.6"
+ ]
+}

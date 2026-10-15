@@ -1,0 +1,13 @@
+{
+ "id": "13",
+ "arquivo": "modulo-04/13-acoes-em-json-ou-em-codigo.md",
+ "modulo": 4,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  ".tool_calls": "0.6"
+ },
+ "donos_modulo0": [
+  "0.6"
+ ]
+}

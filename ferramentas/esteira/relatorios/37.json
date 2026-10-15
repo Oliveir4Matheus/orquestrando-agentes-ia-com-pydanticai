@@ -1,0 +1,11 @@
+{"capitulo": "37",
+ "simbolos": [
+  {"chave": "Agent", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "message_history", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "ModelMessagesTypeAdapter", "status": "apontado_para", "onde": "capítulo 10 / 0.5", "obs": ""},
+  {"chave": "UsageLimits", "status": "explicado_aqui", "onde": "Armadilha", "obs": "UsageLimitExceeded"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Deploy gerenciado](img/cap37-deploy-gerenciado.png)"},
+  {"tipo": "armadilha", "titulo": "UsageLimitExceeded", "apos": "O mesmo vale para o limite de concorrência, que é por processo."}],
+ "imagens": [],
+ "correcoes_sugeridas": [{"trecho": "UsageLimits(request_limit=10) em servico.py", "problema": "UsageLimitExceeded não é tratada; resulta em 500", "sugestao": "capturar e devolver código próprio"}]}

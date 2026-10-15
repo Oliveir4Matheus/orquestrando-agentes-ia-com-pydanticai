@@ -1,0 +1,26 @@
+{
+ "id": "0.2",
+ "arquivo": "modulo-00/0.2-o-python-que-o-livro-assume.md",
+ "modulo": 0,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "py:anotação de tipo",
+  "py:X | None",
+  "Literal",
+  "Annotated",
+  "Union",
+  "Optional",
+  "@dataclass",
+  "dataclass",
+  "py:docstring",
+  "py:lambda",
+  "py:with",
+  "py:async def",
+  "py:await",
+  "py:async with",
+  "py:async for",
+  "asyncio"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

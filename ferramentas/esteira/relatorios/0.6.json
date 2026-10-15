@@ -1,0 +1,152 @@
+{
+ "capitulo": "0.6",
+ "simbolos": [
+  {
+   "chave": "@tool",
+   "status": "explicado_aqui",
+   "onde": "## O esquema nasce da assinatura",
+   "obs": "ferramentas_esquema.py"
+  },
+  {
+   "chave": "@tool_plain",
+   "status": "explicado_aqui",
+   "onde": "## O esquema nasce da assinatura",
+   "obs": "ferramentas_esquema.py"
+  },
+  {
+   "chave": ".tool",
+   "status": "explicado_aqui",
+   "onde": "## Registrar sem decorador",
+   "obs": "ferramentas_tool.py"
+  },
+  {
+   "chave": ".tool_plain",
+   "status": "explicado_aqui",
+   "onde": "## Registrar sem decorador",
+   "obs": "ferramentas_tool.py"
+  },
+  {
+   "chave": "Agent(output_type=)",
+   "status": "explicado_aqui",
+   "onde": "## Saída tipada: `output_type`",
+   "obs": "saida_tipada.py"
+  },
+  {
+   "chave": "output_type",
+   "status": "explicado_aqui",
+   "onde": "## Saída tipada: `output_type`",
+   "obs": "saida_tipada.py e saida_uniao.py"
+  },
+  {
+   "chave": ".output_tools",
+   "status": "explicado_aqui",
+   "onde": "## Saída tipada: `output_type`",
+   "obs": "saida_tipada.py (AgentInfo.output_tools)"
+  },
+  {
+   "chave": "ModelRetry",
+   "status": "explicado_aqui",
+   "onde": "## Quando o modelo erra",
+   "obs": "saida_validacao.py"
+  },
+  {
+   "chave": "retries",
+   "status": "explicado_aqui",
+   "onde": "## Quando o modelo erra",
+   "obs": "saida_validacao.py"
+  },
+  {
+   "chave": "Agent(retries=)",
+   "status": "explicado_aqui",
+   "onde": "## Quando o modelo erra",
+   "obs": "saida_validacao.py"
+  },
+  {
+   "chave": "@output_validator",
+   "status": "explicado_aqui",
+   "onde": "## Quando o modelo erra",
+   "obs": "saida_validacao.py"
+  },
+  {
+   "chave": ".output_validator",
+   "status": "explicado_aqui",
+   "onde": "## Quando o modelo erra",
+   "obs": "saida_validacao.py"
+  },
+  {
+   "chave": "output_validator",
+   "status": "explicado_aqui",
+   "onde": "## Quando o modelo erra",
+   "obs": "saida_validacao.py"
+  },
+  {
+   "chave": "ToolOutput",
+   "status": "explicado_aqui",
+   "onde": "## Três modos de saída",
+   "obs": "saida_modos.py"
+  },
+  {
+   "chave": "NativeOutput",
+   "status": "explicado_aqui",
+   "onde": "## Três modos de saída",
+   "obs": "saida_modos.py"
+  },
+  {
+   "chave": "PromptedOutput",
+   "status": "explicado_aqui",
+   "onde": "## Três modos de saída",
+   "obs": "saida_modos.py"
+  },
+  {
+   "chave": "Tool",
+   "status": "explicado_aqui",
+   "onde": "## Registrar sem decorador",
+   "obs": "ferramentas_tool.py"
+  },
+  {
+   "chave": "Tool(name=)",
+   "status": "explicado_aqui",
+   "onde": "## Registrar sem decorador",
+   "obs": "ferramentas_tool.py"
+  },
+  {
+   "chave": "Tool(description=)",
+   "status": "explicado_aqui",
+   "onde": "## Registrar sem decorador",
+   "obs": "ferramentas_tool.py"
+  },
+  {
+   "chave": ".tool_calls",
+   "status": "explicado_aqui",
+   "onde": "## Registrar sem decorador",
+   "obs": "ferramentas_tool.py"
+  }
+ ],
+ "adicoes": [
+  {
+   "tipo": "secao",
+   "titulo": "capítulo novo inteiro (Módulo 0)",
+   "apos": "início do arquivo"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-6-esquema-da-ferramenta.png",
+   "apos": "parágrafo de introdução"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-6-ciclo-de-validacao.png",
+   "apos": "parágrafo 'Cuidado com o custo.'"
+  },
+  {
+   "tipo": "exercicio",
+   "titulo": "0.6.1 a 0.6.12 em 5 blocos 'Faça você mesmo'",
+   "apos": "fim de cada unidade"
+  }
+ ],
+ "imagens": [
+  "modulo-00/img/cap0-6-esquema-da-ferramenta.png",
+  "modulo-00/img/cap0-6-ciclo-de-validacao.png"
+ ],
+ "correcoes_sugeridas": []
+}

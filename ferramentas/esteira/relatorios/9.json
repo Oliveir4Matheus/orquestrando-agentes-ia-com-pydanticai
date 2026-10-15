@@ -1,0 +1,16 @@
+{"capitulo": "9",
+ "simbolos": [
+  {"chave": ".deps", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""},
+  {"chave": ".instructions", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""},
+  {"chave": ".tool", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "@dataclass", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "@instructions", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""},
+  {"chave": "@tool", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "Agent(deps_type=)", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""},
+  {"chave": "RunContext", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""},
+  {"chave": "RunContext[...]", "status": "apontado_para", "onde": "capítulo 0.7", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Anotações e recuperação sob demanda]"},
+  {"tipo": "secao", "titulo": "Por que usage=ctx.usage importa", "apos": "A ferramenta `investigar_historico` do agente `principal` chama o `investigador`"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

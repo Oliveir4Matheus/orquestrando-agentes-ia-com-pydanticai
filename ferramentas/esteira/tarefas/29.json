@@ -1,0 +1,19 @@
+{
+ "id": "29",
+ "arquivo": "modulo-08/29-humano-no-ciclo.md",
+ "modulo": 8,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "ApprovalRequired",
+  "ApprovalRequired(metadata=)",
+  "DeferredToolRequests",
+  "DeferredToolResults",
+  "ToolDenied"
+ ],
+ "apontar": {
+  ".tool_call_id": "0.5"
+ },
+ "donos_modulo0": [
+  "0.5"
+ ]
+}

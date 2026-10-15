@@ -1,0 +1,8 @@
+[
+ {"arquivo": "modulo-00/img/cap0-2-o-que-o-framework-le.png",
+  "prompt": "Diagrama da esquerda para a direita. À esquerda, um bloco de código com três faixas rotuladas, de cima para baixo: 'nome da função', 'anotações de tipo', 'docstring'. Cada faixa tem uma seta para um bloco central rotulado 'PydanticAI'. Do bloco central sai uma seta para um bloco à direita rotulado 'o que o modelo enxerga'. Setas sem cruzamento. Nenhum outro texto além desses rótulos."},
+ {"arquivo": "modulo-00/img/cap0-2-funcao-vira-ferramenta.png",
+  "prompt": "Duas colunas ligadas por três setas horizontais paralelas, sem cruzamento. Coluna da esquerda com o título 'função Python' e três caixas: 'def consultar_pedido', 'primeira linha da docstring', 'codigo: str'. Coluna da direita com o título 'ferramenta para o modelo' e três caixas na mesma altura: 'name', 'description', 'type: string'. Cada caixa da esquerda aponta para a caixa da direita na mesma altura. Nenhum outro texto além desses rótulos."},
+ {"arquivo": "modulo-00/img/cap0-2-sequencia-e-gather.png",
+  "prompt": "Duas linhas do tempo horizontais, uma acima da outra, com o mesmo eixo de tempo. Linha de cima com o rótulo 'em sequência': duas barras uma depois da outra, rotuladas 'consulta 1001' e 'consulta 1002', e no fim o rótulo '2 s'. Linha de baixo com o rótulo 'com gather': as duas barras 'consulta 1001' e 'consulta 1002' empilhadas e começando no mesmo instante, e no fim o rótulo '1 s'. Nenhum outro texto além desses rótulos."}
+]

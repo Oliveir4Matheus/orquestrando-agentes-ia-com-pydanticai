@@ -1,0 +1,7 @@
+{"capitulo": "14",
+ "simbolos": [],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![A escada de customização]"},
+  {"tipo": "secao", "titulo": "O que a função do modelo simulado recebe", "apos": "> **Nota:** O argumento `Agent()` sem modelo"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

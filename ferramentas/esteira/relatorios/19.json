@@ -1,0 +1,7 @@
+{"capitulo": "19",
+ "simbolos": [],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Paralelização e orquestrador-trabalhadores]"},
+  {"tipo": "secao", "titulo": "Por dentro do plano: o que o Pydantic já verifica", "apos": "Aqui, o código poderia conferir se os códigos do plano coincidem com os códigos da mensagem."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

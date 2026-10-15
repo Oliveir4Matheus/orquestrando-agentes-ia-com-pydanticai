@@ -1,0 +1,17 @@
+{"capitulo": "1",
+ "simbolos": [
+  {"chave": ".output", "status": "apontado_para", "onde": "capítulo 0.4", "obs": "caixa Antes de começar"},
+  {"chave": ".requests", "status": "apontado_para", "onde": "capítulo 0.4", "obs": "caixa Antes de começar"},
+  {"chave": ".run_sync", "status": "apontado_para", "onde": "capítulo 0.4", "obs": "caixa Antes de começar"},
+  {"chave": ".tool_plain", "status": "apontado_para", "onde": "capítulo 0.6", "obs": "caixa Antes de começar"},
+  {"chave": ".usage", "status": "apontado_para", "onde": "capítulo 0.4", "obs": "caixa Antes de começar"},
+  {"chave": "@tool_plain", "status": "apontado_para", "onde": "capítulo 0.6", "obs": "caixa Antes de começar"},
+  {"chave": "Agent", "status": "apontado_para", "onde": "capítulo 0.4", "obs": "caixa Antes de começar"},
+  {"chave": "Agent(instructions=)", "status": "apontado_para", "onde": "capítulo 0.4", "obs": "caixa Antes de começar"},
+  {"chave": "py:X | None", "status": "apontado_para", "onde": "capítulo 0.2", "obs": "caixa Antes de começar"},
+  {"chave": "py:docstring", "status": "apontado_para", "onde": "capítulo 0.2 / 0.6", "obs": "caixa Antes de começar"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Chatbot, workflow e agente](img/cap1-chatbot-workflow-agente.png)"},
+  {"tipo": "secao", "titulo": "Exemplo offline agente_offline.py (TestModel)", "apos": "Um sistema em que o modelo dirige o próprio processo..."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

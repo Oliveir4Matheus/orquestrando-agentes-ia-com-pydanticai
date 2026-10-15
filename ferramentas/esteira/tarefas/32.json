@@ -1,0 +1,14 @@
+{
+ "id": "32",
+ "arquivo": "modulo-09/32-resposta-final-e-juizes.md",
+ "modulo": 9,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "LLMJudge",
+  "LLMJudge(assertion=)",
+  "LLMJudge(model=)",
+  "LLMJudge(rubric=)"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

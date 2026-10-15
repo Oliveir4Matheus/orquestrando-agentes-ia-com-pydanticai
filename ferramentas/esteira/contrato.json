@@ -1,0 +1,55 @@
+{
+ "descricao": "Contrato do Módulo 0 (Fundamentos de Pydantic e PydanticAI). Cada capítulo do módulo é DONO dos símbolos listados: ele os explica por completo; os demais capítulos só apontam para ele. Os nomes casam com `chave` ou `nome` do mapa.json.",
+ "modulo0": [
+  {
+   "id": "0.1",
+   "arquivo": "modulo-00/0.1-o-ecossistema-pydantic.md",
+   "titulo": "O ecossistema Pydantic e o PydanticAI",
+   "resumo": "O que é cada peça (pydantic, pydantic-ai, pydantic-evals, pydantic-graph, Logfire), por que o framework tem 'Pydantic' no nome, como instalar (pacote completo x slim com extras), como ler os exemplos do livro, o mapa do módulo.",
+   "simbolos": ["pydantic", "pydantic_ai", "pydantic_evals", "pydantic_graph", "logfire"]
+  },
+  {
+   "id": "0.2",
+   "arquivo": "modulo-00/0.2-o-python-que-o-livro-assume.md",
+   "titulo": "O Python que o livro assume",
+   "resumo": "Anotações de tipo, X | None, Literal, Annotated, Union/Optional, dataclass, docstrings, decoradores, with, lambda e async/await (asyncio.run, asyncio.gather) — apenas o que os exemplos exigem, cada um com um exemplo mínimo executável.",
+   "simbolos": ["py:anotação de tipo", "py:X | None", "Literal", "Annotated", "Union", "Optional", "@dataclass", "dataclass", "py:docstring", "py:lambda", "py:with", "py:async def", "py:await", "py:async with", "py:async for", "asyncio"]
+  },
+  {
+   "id": "0.3",
+   "arquivo": "modulo-00/0.3-pydantic-na-pratica.md",
+   "titulo": "Pydantic na prática",
+   "resumo": "BaseModel, Field (description, ge, le, min_length, default), validação e ValidationError, model_validate, model_validate_json, model_dump, model_dump_json, model_json_schema, field_validator, model_validator, TypeAdapter; por que o PydanticAI usa tudo isso por baixo.",
+   "simbolos": ["BaseModel", "Field", "ValidationError", "model_validate", "model_validate_json", "model_dump", "model_dump_json", "model_json_schema", "field_validator", "model_validator", "TypeAdapter", ".validate_json", ".validate_python", ".dump_json", ".dump_python", ".model_dump", ".model_dump_json", ".model_validate", ".model_validate_json", ".model_json_schema", ".model_copy"]
+  },
+  {
+   "id": "0.4",
+   "arquivo": "modulo-00/0.4-o-primeiro-agente-por-dentro.md",
+   "titulo": "O primeiro agente por dentro",
+   "resumo": "Agent(modelo, instructions=...), a string 'provedor:modelo', instructions x system_prompt, run, run_sync, run_stream, o objeto de resultado (.output, .usage), ModelSettings, e como o livro troca de modelo em uma linha.",
+   "simbolos": ["Agent", "Agent(instructions=)", "Agent(name=)", ".run_sync", ".run", ".run_stream", ".stream_text", ".stream_output", ".get_output", ".output", ".usage", ".requests", ".input_tokens", ".output_tokens", ".total_tokens", "system_prompt", "ModelSettings"]
+  },
+  {
+   "id": "0.5",
+   "arquivo": "modulo-00/0.5-mensagens-e-testes-sem-api.md",
+   "titulo": "Mensagens e testes sem API",
+   "resumo": "O que trafega entre o código e o modelo (ModelRequest, ModelResponse e as partes: UserPromptPart, TextPart, ToolCallPart, ToolReturnPart, RetryPromptPart), message_history, all_messages/new_messages, e como testar sem chave de API com TestModel e FunctionModel (AgentInfo, override).",
+   "simbolos": ["ModelMessage", "ModelRequest", "ModelResponse", "ModelResponse(parts=)", "TextPart", "ToolCallPart", "ToolReturnPart", "RetryPromptPart", "UserPromptPart", ".parts", ".part_kind", ".content", ".tool_name", ".args_as_dict", ".tool_call_id", ".args", "ModelMessagesTypeAdapter", ".all_messages", ".new_messages", "message_history", "FunctionModel", "AgentInfo", ".function_tools", ".override", "TestModel", "capture_run_messages", "ALLOW_MODEL_REQUESTS"]
+  },
+  {
+   "id": "0.6",
+   "arquivo": "modulo-00/0.6-ferramentas-e-saida-tipada.md",
+   "titulo": "Ferramentas e saída tipada",
+   "resumo": "Como o schema da ferramenta nasce da assinatura e da docstring (@tool_plain, @tool), output_type (BaseModel, str, listas, união), como o PydanticAI valida a saída do modelo, ModelRetry, retries e output_validator; os modos de saída (ToolOutput, NativeOutput, PromptedOutput).",
+   "simbolos": ["@tool", "@tool_plain", ".tool", ".tool_plain", "Agent(output_type=)", "output_type", ".output_tools", "ModelRetry", "retries", "Agent(retries=)", "@output_validator", ".output_validator", "output_validator", "ToolOutput", "NativeOutput", "PromptedOutput", "Tool", "Tool(name=)", "Tool(description=)", ".tool_calls"]
+  },
+  {
+   "id": "0.7",
+   "arquivo": "modulo-00/0.7-dependencias-e-contexto.md",
+   "titulo": "Dependências e contexto",
+   "resumo": "deps_type, RunContext[Deps], ctx.deps, Agent[Deps, Saída], instruções dinâmicas (@agent.instructions), por que injetar dependências em vez de variáveis globais e como isso facilita o teste.",
+   "simbolos": ["RunContext", "RunContext[...]", "Agent[...]", "Agent(deps_type=)", "deps_type", ".deps", "@instructions", ".instructions", ".retry"]
+  }
+ ],
+ "visao_geral": "modulo-00/00-visao-geral.md"
+}

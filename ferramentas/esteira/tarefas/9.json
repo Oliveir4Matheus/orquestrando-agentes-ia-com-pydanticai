@@ -1,0 +1,23 @@
+{
+ "id": "9",
+ "arquivo": "modulo-03/09-notas-e-recuperacao-sob-demanda.md",
+ "modulo": 3,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  ".deps": "0.7",
+  ".instructions": "0.7",
+  ".tool": "0.6",
+  "@dataclass": "0.2",
+  "@instructions": "0.7",
+  "@tool": "0.6",
+  "Agent(deps_type=)": "0.7",
+  "RunContext": "0.7",
+  "RunContext[...]": "0.7"
+ },
+ "donos_modulo0": [
+  "0.2",
+  "0.6",
+  "0.7"
+ ]
+}

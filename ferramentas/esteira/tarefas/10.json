@@ -1,0 +1,17 @@
+{
+ "id": "10",
+ "arquivo": "modulo-03/10-arquitetura-de-memoria.md",
+ "modulo": 3,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  ".dump_json": "0.3",
+  ".part_kind": "0.5",
+  ".validate_json": "0.3",
+  "ModelMessagesTypeAdapter": "0.5"
+ },
+ "donos_modulo0": [
+  "0.3",
+  "0.5"
+ ]
+}

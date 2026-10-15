@@ -1,0 +1,14 @@
+{"capitulo": "2",
+ "simbolos": [
+  {"chave": ".function_tools", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "caixa Antes de começar + lembrete"},
+  {"chave": "AgentInfo", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "caixa Antes de começar + lembrete"},
+  {"chave": "FunctionModel", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "caixa Antes de começar + lembrete"},
+  {"chave": "ModelResponse", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "caixa Antes de começar + lembrete"},
+  {"chave": "ModelResponse(parts=)", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "lembrete"},
+  {"chave": "TextPart", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "caixa Antes de começar + lembrete"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Componentes de um agente](img/cap2-componentes-do-agente.png)"},
+  {"tipo": "secao", "titulo": "Lembrete — FunctionModel", "apos": "o que torna o truque seguro para depurar."},
+  {"tipo": "secao", "titulo": "O esquema dos parâmetros (espiar_esquema.py)", "apos": "Lembrete — FunctionModel"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

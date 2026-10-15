@@ -1,0 +1,16 @@
+{
+ "id": "31",
+ "arquivo": "modulo-09/31-trajetoria-e-uso-de-ferramentas.md",
+ "modulo": 9,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "Case(evaluators=)",
+  "MaxModelRequests",
+  "MaxModelRequests(max_requests=)",
+  "TrajectoryMatch",
+  "TrajectoryMatch(expected_trajectory=)",
+  "TrajectoryMatch(order=)"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

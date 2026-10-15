@@ -1,0 +1,8 @@
+{"capitulo": "13",
+ "simbolos": [
+  {"chave": ".tool_calls", "status": "apontado_para", "onde": "capítulo 0.6", "obs": "lembrete na seção Por dentro da medição"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Ações em JSON ou em código]"},
+  {"tipo": "secao", "titulo": "Por dentro da medição", "apos": "Há ainda um ganho de correção"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

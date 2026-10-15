@@ -1,0 +1,30 @@
+{
+ "id": "0.6",
+ "arquivo": "modulo-00/0.6-ferramentas-e-saida-tipada.md",
+ "modulo": 0,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "@tool",
+  "@tool_plain",
+  ".tool",
+  ".tool_plain",
+  "Agent(output_type=)",
+  "output_type",
+  ".output_tools",
+  "ModelRetry",
+  "retries",
+  "Agent(retries=)",
+  "@output_validator",
+  ".output_validator",
+  "output_validator",
+  "ToolOutput",
+  "NativeOutput",
+  "PromptedOutput",
+  "Tool",
+  "Tool(name=)",
+  "Tool(description=)",
+  ".tool_calls"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

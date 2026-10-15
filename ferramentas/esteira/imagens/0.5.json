@@ -1,0 +1,6 @@
+[
+ {"arquivo": "modulo-00/img/cap0-5-ciclo-de-mensagens.png",
+  "prompt": "Diagrama de sequência com duas colunas verticais: 'Agent' à esquerda e 'modelo' à direita. Quatro setas horizontais, de cima para baixo, sem cruzamento. Seta 1, da esquerda para a direita, rotulada 'ModelRequest: UserPromptPart'. Seta 2, da direita para a esquerda, rotulada 'ModelResponse: ToolCallPart'. Seta 3, da esquerda para a direita, rotulada 'ModelRequest: ToolReturnPart'. Seta 4, da direita para a esquerda, rotulada 'ModelResponse: TextPart'. Setas de requisição em azul e de resposta em verde. Nenhum outro texto além desses rótulos."},
+ {"arquivo": "modulo-00/img/cap0-5-override-no-teste.png",
+  "prompt": "Diagrama com um bloco grande 'Agent' no centro. À esquerda, um bloco 'modelo real' ligado ao Agent por uma linha tracejada cinza com um X laranja e o rótulo 'bloqueado no teste'. À direita, um bloco 'TestModel' ligado ao Agent por uma seta verde contínua rotulada '.override'. Abaixo do Agent, uma faixa horizontal com o texto 'ALLOW_MODEL_REQUESTS = False'. Nenhum outro texto além desses rótulos; setas sem cruzamento."}
+]

@@ -1,0 +1,14 @@
+{"capitulo": "8",
+ "simbolos": [
+  {"chave": "ProcessHistory", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — ProcessHistory", "obs": ""},
+  {"chave": ".input_tokens", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": ".run", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "ModelMessage", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "ModelRequest", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "py:async def", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "py:await", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![A janela de contexto enchendo]"},
+  {"tipo": "por_dentro", "titulo": "ProcessHistory", "apos": "`limpar_resultados` usa esse índice como linha de corte."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

@@ -1,0 +1,14 @@
+{"capitulo": "26",
+ "simbolos": [
+  {"chave": "@resource", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `@resource`", "obs": ""},
+  {"chave": "Agent(toolsets=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Agent(toolsets=)`", "obs": ""},
+  {"chave": "FastMCP", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `FastMCP`", "obs": "biblioteca fastmcp, não PydanticAI"},
+  {"chave": "MCPToolset", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `MCPToolset`", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![MCP e A2A](img/cap26-mcp-e-a2a.png)"},
+  {"tipo": "por_dentro", "titulo": "FastMCP", "apos": "que um cliente local sabe usar."},
+  {"tipo": "por_dentro", "titulo": "@resource", "apos": "que um cliente local sabe usar."},
+  {"tipo": "por_dentro", "titulo": "Agent(toolsets=)", "apos": "que as funções vivem em outro lugar."},
+  {"tipo": "por_dentro", "titulo": "MCPToolset", "apos": "que as funções vivem em outro lugar."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

@@ -1,0 +1,11 @@
+{"capitulo": "17",
+ "simbolos": [
+  {"chave": "Agent", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "output_type", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "FunctionModel/override", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "str | None sem padrão", "status": "explicado_aqui", "onde": "Armadilha — `str | None` não é opcional", "obs": "campo obrigatório porém anulável"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Ancoragem nos fatos](img/cap17-ancoragem.png)"},
+  {"tipo": "armadilha", "titulo": "Armadilha — `str | None` não é opcional", "apos": "**Os modelos de dados.**"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

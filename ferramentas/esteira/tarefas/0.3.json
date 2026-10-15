@@ -1,0 +1,31 @@
+{
+ "id": "0.3",
+ "arquivo": "modulo-00/0.3-pydantic-na-pratica.md",
+ "modulo": 0,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "BaseModel",
+  "Field",
+  "ValidationError",
+  "model_validate",
+  "model_validate_json",
+  "model_dump",
+  "model_dump_json",
+  "model_json_schema",
+  "field_validator",
+  "model_validator",
+  "TypeAdapter",
+  ".validate_json",
+  ".validate_python",
+  ".dump_json",
+  ".dump_python",
+  ".model_dump",
+  ".model_dump_json",
+  ".model_validate",
+  ".model_validate_json",
+  ".model_json_schema",
+  ".model_copy"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

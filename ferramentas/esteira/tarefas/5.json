@@ -1,0 +1,18 @@
+{
+ "id": "5",
+ "arquivo": "modulo-02/05-raciocinar-e-agir.md",
+ "modulo": 2,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "Agent(tools=)"
+ ],
+ "apontar": {
+  ".override": "0.5",
+  "py:lambda": "0.2",
+  "py:with": "0.2"
+ },
+ "donos_modulo0": [
+  "0.2",
+  "0.5"
+ ]
+}

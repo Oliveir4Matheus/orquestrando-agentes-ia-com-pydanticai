@@ -1,0 +1,189 @@
+{
+ "estilo": "Estilo: ilustração didática vetorial plana (flat), fundo branco, 16:9, paleta azul-marinho (#1F3A5F), azul (#2F80ED), verde (#27AE60), laranja (#F2994A) e cinza claro; cantos arredondados, setas claras SEM cruzamentos, tipografia sans-serif legível; TODO o texto em português do Brasil exatamente como indicado, sem erros e SEM acrescentar nenhum outro texto, número ou porcentagem; sem marcas d'água; poucos elementos, muito espaço em branco. Salve APENAS o PNG (nenhum HTML ou outro arquivo) com o nome indicado neste diretório e responda só com o caminho.",
+ "imagens": [
+  {
+   "arquivo": "modulo-05/img/cap16-lora.png",
+   "prompt": "Diagrama de LoRA: um grande bloco azul-marinho rotulado 'Pesos do modelo (congelados)' e, ao lado, dois blocos laranja pequenos e estreitos rotulados 'A' e 'B' (a 'matriz pequena de ajuste'), ligados por um sinal de soma ao bloco grande, com o rótulo 'só A e B são treinados'. Embaixo, uma comparação visual de tamanho: um quadrado muito grande rotulado 'Ajuste completo' e um quadrado minúsculo rotulado 'LoRA'."
+  },
+  {
+   "arquivo": "modulo-06/img/parte6-visao-geral.png",
+   "prompt": "Diagrama de trilha horizontal com quatro marcos numerados ligados por setas: '18 Encadeamento e roteamento', '19 Paralelização e orquestrador-trabalhadores', '20 Avaliador-otimizador', '21 Blocos combináveis'. Título acima: 'Módulo 6 — Padrões de orquestração de um agente'."
+  },
+  {
+   "arquivo": "modulo-06/img/cap18-encadeamento-e-roteamento.png",
+   "prompt": "Diagrama em duas metades. Esquerda, título 'Encadeamento': 'Extrair dados' → um losango 'Porta de verificação' → 'Redigir resposta', com uma seta de desvio do losango para 'Pedir o que falta'. Direita, título 'Roteamento': 'Mensagem' → 'Classificador' → três caixas 'Pedidos', 'Políticas', 'Reclamações'."
+  },
+  {
+   "arquivo": "modulo-06/img/cap19-paralelo-e-orquestrador.png",
+   "prompt": "Diagrama em duas metades. Esquerda, título 'Paralelização': 'Mensagem' se divide em três caixas lado a lado 'Sentimento', 'Categoria', 'Dados pessoais' que se juntam em 'Resultado'. Direita, título 'Orquestrador-trabalhadores': 'Pedido complexo' → 'Orquestrador (define as tarefas na hora)' → duas ou três caixas 'Trabalhador' → 'Síntese'."
+  },
+  {
+   "arquivo": "modulo-06/img/cap20-avaliador-otimizador.png",
+   "prompt": "Diagrama de ciclo com três caixas: 'Redator (gera um rascunho)' → 'Avaliador (aprova ou aponta problemas)' → de volta ao 'Redator' com a seta rotulada 'problemas apontados'. Uma seta sai do Avaliador para a caixa verde 'Aprovado: entregar', rotulada 'passou'. No canto, um selo 'limite de rodadas'."
+  },
+  {
+   "arquivo": "modulo-06/img/cap21-blocos-combinaveis.png",
+   "prompt": "Diagrama de blocos encaixáveis com quatro tipos de bloco de cores diferentes e rótulos: 'Sequencial' (azul), 'Paralelo' (verde), 'Repetir' (laranja), 'Rotear' (azul-marinho). Abaixo, um exemplo montado: 'Sequencial' contendo 'Extrair' → 'Paralelo' (com 'Pedido' e 'Política') → 'Redigir' → 'Repetir' (com 'Avaliar' e 'Revisar'). Uma faixa embaixo: 'Estado compartilhado'."
+  },
+  {
+   "arquivo": "modulo-07/img/parte7-visao-geral.png",
+   "prompt": "Diagrama de trilha horizontal com cinco marcos numerados ligados por setas: '22 Gerente e transferência', '23 Orquestrador em produção', '24 Supervisor e colaboradores', '25 Topologias de colaboração', '26 Protocolos MCP e A2A'. Título acima: 'Módulo 7 — Orquestração multiagente'."
+  },
+  {
+   "arquivo": "modulo-07/img/cap22-gerente-e-transferencia.png",
+   "prompt": "Diagrama em duas metades. Esquerda, título 'Gerente (agentes como ferramentas)': uma caixa central 'Gerente' conectada por setas de ida e volta a três caixas 'Especialista', e uma seta do gerente para 'Cliente'. Direita, título 'Transferência (handoff)': uma sequência 'Triagem' → 'Pedidos' → 'Reclamações' com setas de uma direção, e a última caixa falando diretamente com 'Cliente'."
+  },
+  {
+   "arquivo": "modulo-07/img/cap23-orquestrador-em-producao.png",
+   "prompt": "Diagrama de um agente líder no topo, rotulado 'Líder', que envia três setas para três caixas 'Subagente' lado a lado, cada uma com um pequeno cartão rotulado 'Briefing: objetivo, fonte, formato, limite'. As setas voltam ao líder rotuladas 'resumo'. Uma faixa lateral 'Custo: chat < agente < multiagente' com três barras crescentes sem números."
+  },
+  {
+   "arquivo": "modulo-07/img/cap24-supervisor-e-colaboradores.png",
+   "prompt": "Diagrama em duas linhas. Linha de cima, título 'Supervisor coordena': 'Cliente' → 'Supervisor' ↔ dois 'Colaborador', e o Supervisor responde ao cliente. Linha de baixo, título 'Supervisor com roteamento': 'Cliente' → 'Supervisor' → 'Colaborador' que responde direto ao cliente, com o selo 'menos latência'."
+  },
+  {
+   "arquivo": "modulo-07/img/cap25-topologias.png",
+   "prompt": "Quadro com cinco miniaturas de topologias, cada uma com um rótulo: 'Hierárquica' (uma árvore de caixas), 'Diamante' (duas caixas que convergem em uma caixa 'Moderador' e depois 'Cliente'), 'Ponto a ponto' (três caixas ligadas entre si por setas de transferência), 'Colaborativa' (três caixas que convergem em 'Misturador'), 'Laço adaptativo' (uma caixa com seta circular)."
+  },
+  {
+   "arquivo": "modulo-07/img/cap26-mcp-e-a2a.png",
+   "prompt": "Diagrama com três caixas na horizontal: 'Agente A' no centro-esquerda, 'Agente B' no centro-direita, e abaixo do Agente A uma caixa 'Ferramentas e dados'. Uma seta entre Agente A e Agente B rotulada 'A2A: agente com agente'. Uma seta entre Agente A e 'Ferramentas e dados' rotulada 'MCP: agente com ferramentas'. Acima do Agente B, um pequeno cartão 'Cartão do agente (descoberta)'."
+  },
+  {
+   "arquivo": "modulo-08/img/parte8-visao-geral.png",
+   "prompt": "Diagrama de trilha horizontal com três marcos numerados ligados por setas: '27 Guardrails em camadas', '28 Risco por ferramenta', '29 Humano no ciclo'. Título acima: 'Módulo 8 — Guardrails, segurança e supervisão humana'."
+  },
+  {
+   "arquivo": "modulo-08/img/cap27-guardrails-em-camadas.png",
+   "prompt": "Diagrama de defesa em camadas, da esquerda para a direita: 'Mensagem do cliente' → camada 1 'Regras (código)' → camada 2 'Classificadores: relevância e segurança' → 'Atendente' → camada 3 'Validação e filtro de saída' → 'Cliente'. Uma seta lateral rotulada 'bloqueio' parte de cada camada para uma caixa laranja 'Resposta segura de recusa'."
+  },
+  {
+   "arquivo": "modulo-08/img/cap28-camadas-de-risco.png",
+   "prompt": "Quadro com três colunas coloridas rotuladas 'Autônoma' (verde), 'Notificar' (laranja claro) e 'Aprovar' (laranja escuro). Embaixo de cada coluna, uma ou duas ações de exemplo: 'consultar pedido' em Autônoma; 'reenviar etiqueta' e 'reembolso pequeno' em Notificar; 'reembolso grande' e 'excluir conta' em Aprovar. Uma seta acima: 'mais risco, mais controle'."
+  },
+  {
+   "arquivo": "modulo-08/img/cap29-aprovacao-humana.png",
+   "prompt": "Fluxo vertical: 'Agente pede uma ação de risco' → 'Pausa e pedido de revisão (ação, motivo, impacto)' → 'Revisor principal' com um relógio e a seta 'sem resposta no prazo' para 'Revisor secundário', e depois para 'Negar por padrão'. Das caixas de revisão saem duas setas 'aprovar' e 'negar' para 'Agente retoma e conclui'. Uma caixa lateral 'Registro: quem, quando, por quê'."
+  },
+  {
+   "arquivo": "modulo-09/img/parte9-visao-geral.png",
+   "prompt": "Diagrama de trilha horizontal com quatro marcos numerados ligados por setas: '30 Tarefas, tentativas e avaliadores', '31 Trajetória e uso de ferramentas', '32 Resposta final e juízes', '33 Benchmarks e avaliação contínua'. Título acima: 'Módulo 9 — Avaliação de agentes'."
+  },
+  {
+   "arquivo": "modulo-09/img/cap30-vocabulario-de-avaliacao.png",
+   "prompt": "Diagrama do vocabulário de avaliação: uma caixa 'Tarefa (entrada e critério de sucesso)' que se repete em várias 'Tentativas', cada tentativa produzindo uma 'Transcrição (passos do agente)' e um 'Resultado final'. Três 'Avaliadores' (código, modelo, pessoa) apontam para a transcrição e o resultado. Um quadro ao redor rotulado 'Conjunto de avaliação'."
+  },
+  {
+   "arquivo": "modulo-09/img/cap31-trajetoria.png",
+   "prompt": "Diagrama comparando duas sequências horizontais de caixas: 'Esperada: Pedido → Política' e 'Real: Pedido → Pedido → Política', com setas finas ligando as caixas iguais e uma caixa laranja destacando a chamada extra. Embaixo, três selos 'exata', 'na ordem', 'em qualquer ordem'."
+  },
+  {
+   "arquivo": "modulo-09/img/cap32-juiz-e-pessoa.png",
+   "prompt": "Diagrama de calibração: uma coluna de 'Respostas do agente' alimenta duas caixas, 'Juiz automático (modelo)' e 'Pessoa especialista', que emitem vereditos 'aprova' e 'reprova'. Uma caixa central 'Comparar vereditos' mostra 'concordância' e leva à seta 'ajustar a rubrica'."
+  },
+  {
+   "arquivo": "modulo-09/img/cap33-avaliacao-continua.png",
+   "prompt": "Diagrama do 'modelo do queijo suíço': cinco fatias verticais de queijo com furos desalinhados, rotuladas 'Avaliações automáticas', 'Monitoramento em produção', 'Testes A/B', 'Retorno dos usuários', 'Revisão de transcrições'. Uma seta atravessa as fatias e é bloqueada por alguma delas."
+  },
+  {
+   "arquivo": "modulo-10/img/parte10-visao-geral.png",
+   "prompt": "Diagrama de trilha horizontal com quatro marcos numerados ligados por setas: '34 Observabilidade', '35 Execução durável', '36 Avaliação em produção', '37 Deploy gerenciado'. Título acima: 'Módulo 10 — Confiabilidade e operação em produção'."
+  },
+  {
+   "arquivo": "modulo-10/img/cap34-rastro-de-execucao.png",
+   "prompt": "Diagrama de uma árvore de rastro de execução: no topo uma caixa 'Agente atendente', abaixo dela quatro caixas em fila vertical conectadas por uma linha: 'Chamada ao modelo', 'Ferramenta: consultar_pedido', 'Chamada ao modelo' — cada uma com uma etiqueta pequena 'tempo' e 'tokens'. Ao lado, três ícones rotulados 'Registros', 'Rastros' e 'Métricas'."
+  },
+  {
+   "arquivo": "modulo-10/img/cap35-execucao-duravel.png",
+   "prompt": "Linha do tempo horizontal com três etapas 'Etapa 1', 'Etapa 2', 'Etapa 3', e um raio rotulado 'queda' entre a etapa 2 e a 3. Duas faixas: acima, 'Sem checkpoint: recomeça do zero' com uma seta voltando ao início; abaixo, 'Com checkpoint: retoma de onde parou' com um marcador de bandeira após a etapa 2 e a seta continuando para a etapa 3. Um selo 'efeito uma vez só'."
+  },
+  {
+   "arquivo": "modulo-10/img/cap36-quatro-dimensoes.png",
+   "prompt": "Quadro com quatro quadrantes rotulados 'Qualidade', 'Desempenho', 'Responsabilidade' e 'Custo', cada um com um medidor simples e uma linha de exemplo: 'taxa de resolução', 'latência p95', 'dados pessoais na saída', 'reais por atendimento'. No centro, um círculo 'Pessoas revisam amostras'."
+  },
+  {
+   "arquivo": "modulo-10/img/cap37-deploy-gerenciado.png",
+   "prompt": "Diagrama em camadas empilhadas, de baixo para cima: 'Modelo', 'Seu agente (código)', 'Runtime gerenciado: execução, sessões, escala', 'Cliente (aplicativo, site, outro sistema)'. À direita, uma coluna com quatro itens rotulados 'Sessões', 'Escala automática', 'Segurança', 'Observabilidade'."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-1-mapa-do-ecossistema.png",
+   "prompt": "Diagrama em camadas mostrando o ecossistema usado no livro. Na base, um bloco largo com o rótulo 'pydantic — validação de dados'. Acima dele, um bloco central com o rótulo 'pydantic_ai — agentes'. Em volta do bloco central, três blocos menores ligados a ele por setas simples: à esquerda 'pydantic_evals — avaliar', acima 'pydantic_graph — encadear passos', à direita 'logfire — observar'. Setas sem cruzamento. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-1-perguntas-de-apoio.png",
+   "prompt": "Três colunas lado a lado, cada uma com um balão de pergunta no topo e um bloco de resposta embaixo, ligados por uma seta para baixo. Coluna 1: balão 'O agente acerta?' e bloco 'pydantic_evals'. Coluna 2: balão 'Qual passo vem depois?' e bloco 'pydantic_graph'. Coluna 3: balão 'O que ele fez?' e bloco 'logfire'. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-2-o-que-o-framework-le.png",
+   "prompt": "Diagrama da esquerda para a direita. À esquerda, um bloco de código com três faixas rotuladas, de cima para baixo: 'nome da função', 'anotações de tipo', 'docstring'. Cada faixa tem uma seta para um bloco central rotulado 'PydanticAI'. Do bloco central sai uma seta para um bloco à direita rotulado 'o que o modelo enxerga'. Setas sem cruzamento. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-2-funcao-vira-ferramenta.png",
+   "prompt": "Duas colunas ligadas por três setas horizontais paralelas, sem cruzamento. Coluna da esquerda com o título 'função Python' e três caixas: 'def consultar_pedido', 'primeira linha da docstring', 'codigo: str'. Coluna da direita com o título 'ferramenta para o modelo' e três caixas na mesma altura: 'name', 'description', 'type: string'. Cada caixa da esquerda aponta para a caixa da direita na mesma altura. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-2-sequencia-e-gather.png",
+   "prompt": "Duas linhas do tempo horizontais, uma acima da outra, com o mesmo eixo de tempo. Linha de cima com o rótulo 'em sequência': duas barras uma depois da outra, rotuladas 'consulta 1001' e 'consulta 1002', e no fim o rótulo '2 s'. Linha de baixo com o rótulo 'com gather': as duas barras 'consulta 1001' e 'consulta 1002' empilhadas e começando no mesmo instante, e no fim o rótulo '1 s'. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-3-ciclo-de-validacao.png",
+   "prompt": "Diagrama da esquerda para a direita com três blocos ligados por setas, sem cruzamento. Bloco da esquerda rotulado 'dados brutos', com duas etiquetas menores dentro: 'dicionário' e 'texto JSON'. Seta para a direita rotulada 'validar' até o bloco central rotulado 'objeto Python'. Do bloco central, seta para a direita rotulada 'serializar' até o bloco da direita rotulado 'dicionário ou JSON'. Abaixo da seta 'validar', um pequeno balão laranja rotulado 'ValidationError'. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-3-validacao-no-agente.png",
+   "prompt": "Diagrama de ciclo com quatro caixas. Caixa 'Produto' no alto à esquerda com uma seta rotulada 'esquema JSON' para a caixa 'modelo de linguagem' no alto à direita. Da caixa 'modelo de linguagem', seta para baixo rotulada 'resposta JSON' até a caixa 'validação Pydantic' embaixo à direita. Da caixa 'validação Pydantic' saem duas setas: uma verde para a esquerda até a caixa 'resultado.output' embaixo à esquerda, rotulada 'válido'; e uma laranja curva de volta para cima até 'modelo de linguagem', rotulada 'erros: tente de novo'. Setas sem cruzamento. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-4-anatomia-de-uma-execucao.png",
+   "prompt": "Diagrama da esquerda para a direita com quatro blocos ligados por setas, sem cruzamento. Bloco 'prompt' à esquerda. Seta até o bloco 'Agent', que tem duas etiquetas menores dentro: 'modelo' e 'instructions'. Seta rotulada 'requisição' até o bloco 'modelo de linguagem'. Seta de volta rotulada 'resposta' até o bloco 'resultado' à direita, que tem duas etiquetas menores dentro: '.output' e '.usage'. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-4-tres-formas-de-executar.png",
+   "prompt": "Diagrama com um bloco 'Agent' à esquerda e três setas horizontais paralelas, sem cruzamento, saindo dele para três blocos empilhados à direita. Seta de cima rotulada '.run_sync' até o bloco 'espera e devolve tudo'. Seta do meio rotulada '.run' até o bloco 'await, devolve tudo'. Seta de baixo rotulada '.run_stream' até o bloco 'entrega aos pedaços', que tem uma etiqueta laranja menor dentro: '.stream_text'. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-5-ciclo-de-mensagens.png",
+   "prompt": "Diagrama de sequência com duas colunas verticais: 'Agent' à esquerda e 'modelo' à direita. Quatro setas horizontais, de cima para baixo, sem cruzamento. Seta 1, da esquerda para a direita, rotulada 'ModelRequest: UserPromptPart'. Seta 2, da direita para a esquerda, rotulada 'ModelResponse: ToolCallPart'. Seta 3, da esquerda para a direita, rotulada 'ModelRequest: ToolReturnPart'. Seta 4, da direita para a esquerda, rotulada 'ModelResponse: TextPart'. Setas de requisição em azul e de resposta em verde. Nenhum outro texto além desses rótulos."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-5-override-no-teste.png",
+   "prompt": "Diagrama com um bloco grande 'Agent' no centro. À esquerda, um bloco 'modelo real' ligado ao Agent por uma linha tracejada cinza com um X laranja e o rótulo 'bloqueado no teste'. À direita, um bloco 'TestModel' ligado ao Agent por uma seta verde contínua rotulada '.override'. Abaixo do Agent, uma faixa horizontal com o texto 'ALLOW_MODEL_REQUESTS = False'. Nenhum outro texto além desses rótulos; setas sem cruzamento."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-6-esquema-da-ferramenta.png",
+   "prompt": "Diagrama da esquerda para a direita. À esquerda, um cartão de código com três faixas rotuladas: 'nome da função', 'anotações de tipo', 'docstring'. As três faixas apontam, por setas paralelas, para uma caixa central rotulada 'PydanticAI'. Da caixa central sai uma seta para a direita até um cartão rotulado 'esquema JSON'. Desse cartão sai uma seta para um ícone de cérebro rotulado 'modelo'. Abaixo, uma seta de retorno do 'modelo' para o 'esquema JSON' com o rótulo 'argumentos validados'."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-6-ciclo-de-validacao.png",
+   "prompt": "Fluxograma em ciclo. Caixa 'resposta do modelo' com seta para um losango 'validação Pydantic'. Do losango, seta 'válida' para outro losango 'validador de saída'. Desse losango, seta 'aceita' para uma caixa verde 'resultado.output'. Dos dois losangos saem setas laranja 'falhou' que convergem para uma caixa laranja 'ModelRetry: pedido de correção', e dela uma seta volta para 'resposta do modelo' com o rótulo 'até o limite de retries'."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-7-dependencias-no-contexto.png",
+   "prompt": "Diagrama de fluxo da esquerda para a direita. À esquerda, uma caixa 'run_sync(deps=loja)'. Uma seta leva a uma caixa central maior 'RunContext' contendo o rótulo interno 'ctx.deps'. Da caixa central saem duas setas para a direita, uma para a caixa 'Ferramenta @tool' (em cima) e outra para a caixa 'Instruções @instructions' (embaixo). À direita, fora do fluxo, uma caixa 'Modelo' recebe setas apenas das duas caixas da direita, com o rótulo 'só o resultado'. Uma linha tracejada separa 'RunContext' de 'Modelo' com o rótulo 'o modelo não vê as dependências'."
+  },
+  {
+   "arquivo": "modulo-00/img/cap0-7-override-deps.png",
+   "prompt": "Diagrama comparativo em duas colunas lado a lado. Coluna da esquerda com o título 'Produção': caixa 'atender()' com seta para 'atendente' e seta para 'BancoProducao'. Coluna da direita com o título 'Teste: override(deps=)': caixa 'atender()' com seta para 'atendente' e seta para 'BancoFalso'. Entre as colunas, o texto 'mesmo código, outra dependência'."
+  },
+  {
+   "arquivo": "modulo-00/img/parte0-visao-geral.png",
+   "prompt": "Diagrama de trilha em duas linhas, com sete marcos numerados ligados por setas, quatro na primeira linha e três na segunda: '0.1 O ecossistema Pydantic e o PydanticAI', '0.2 O Python que o livro assume', '0.3 Pydantic na prática', '0.4 O primeiro agente por dentro', '0.5 Mensagens e testes sem API', '0.6 Ferramentas e saída tipada', '0.7 Dependências e contexto'. Título acima: 'Módulo 0 — Fundamentos de Pydantic e PydanticAI'."
+  },
+  {
+   "arquivo": "modulo-01/img/cap3-all-messages-lista.png",
+   "prompt": "Diagrama de uma lista vertical de seis cartões empilhados e numerados de 1 a 6, dentro de uma moldura de cantos arredondados com o título 'all_messages()'. Os cartões 1, 3 e 5 são azuis, com o texto 'ModelRequest' e a legenda pequena 'agente → modelo'. Os cartões 2, 4 e 6 são verdes, com o texto 'ModelResponse' e a legenda pequena 'modelo → agente'. À direita da moldura, uma chave (colchete) abraça a lista inteira, com o rótulo 'lista com 6 mensagens'."
+  },
+  {
+   "arquivo": "modulo-01/img/cap3-quatro-partes.png",
+   "prompt": "Diagrama em duas faixas horizontais, uma acima da outra. A faixa de cima é azul, com o título 'ModelRequest (agente → modelo)' e dois cartões lado a lado: 'Pedido' com a legenda pequena 'UserPromptPart' e 'Observação' com a legenda pequena 'ToolReturnPart'. A faixa de baixo é verde, com o título 'ModelResponse (modelo → agente)' e dois cartões lado a lado: 'Ação' com a legenda pequena 'ToolCallPart' e 'Resposta' com a legenda pequena 'TextPart'."
+  },
+  {
+   "arquivo": "modulo-01/img/cap3-com-e-sem-historico.png",
+   "prompt": "Diagrama em duas metades lado a lado, separadas por uma linha fina. Esquerda, título 'Sem histórico': um balão cinza 'E qual é o valor dele?' com uma seta para uma caixa azul-marinho 'modelo', e ao lado da caixa um grande ponto de interrogação laranja com o rótulo 'dele quem?'. Direita, título 'Com message_history': três balões empilhados, 'Onde está o meu pedido 1001?', 'Resposta anterior' e 'E qual é o valor dele?', com uma seta para uma caixa azul-marinho 'modelo', e ao lado da caixa um visto verde com o rótulo 'sabe que é o pedido 1001'."
+  },
+  {
+   "arquivo": "modulo-01/img/cap3-teto-de-chamadas.png",
+   "prompt": "Diagrama horizontal com quatro caixas em fila ligadas por setas para a direita. As três primeiras são azuis, com os rótulos 'Chamada 1', 'Chamada 2' e 'Chamada 3'. A quarta é laranja, com borda tracejada e um pequeno sinal de pare, com o rótulo 'Chamada 4 barrada'. Abaixo da fila, uma barra horizontal azul-marinho cobre as três primeiras caixas, com o rótulo 'request_limit=3', e abaixo da quarta caixa aparece o texto 'UsageLimitExceeded' em laranja."
+  }
+ ]
+}

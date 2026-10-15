@@ -1,0 +1,19 @@
+{
+ "id": "11",
+ "arquivo": "modulo-04/11-o-contrato-de-uma-ferramenta.md",
+ "modulo": 4,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "Field(description=)",
+  "Field(pattern=)"
+ ],
+ "apontar": {
+  "Annotated": "0.2",
+  "Literal": "0.2",
+  "RetryPromptPart": "0.5"
+ },
+ "donos_modulo0": [
+  "0.2",
+  "0.5"
+ ]
+}

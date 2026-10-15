@@ -1,0 +1,25 @@
+{
+ "id": "6",
+ "arquivo": "modulo-02/06-raciocinio-explicito.md",
+ "modulo": 2,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "Field(ge=)",
+  "Field(le=)",
+  "ModelSettings(thinking=)"
+ ],
+ "apontar": {
+  ".output_tools": "0.6",
+  "Agent(output_type=)": "0.6",
+  "BaseModel": "0.3",
+  "Field": "0.3",
+  "ModelSettings": "0.4",
+  "py:anotação de tipo": "0.2"
+ },
+ "donos_modulo0": [
+  "0.2",
+  "0.3",
+  "0.4",
+  "0.6"
+ ]
+}

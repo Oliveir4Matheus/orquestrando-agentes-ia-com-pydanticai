@@ -1,0 +1,14 @@
+{
+ "id": "26",
+ "arquivo": "modulo-07/26-protocolos-mcp-e-a2a.md",
+ "modulo": 7,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "@resource",
+  "Agent(toolsets=)",
+  "FastMCP",
+  "MCPToolset"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

@@ -1,0 +1,164 @@
+{
+ "capitulo": "0.4",
+ "simbolos": [
+  {
+   "chave": "Agent",
+   "status": "explicado_aqui",
+   "onde": "## `Agent`: o objeto que conversa com o modelo",
+   "obs": "agente_minimo.py; configuração x conversa; criado uma vez"
+  },
+  {
+   "chave": "Agent(instructions=)",
+   "status": "explicado_aqui",
+   "onde": "## `Agent`: o objeto que conversa com o modelo",
+   "obs": "enviado em toda requisição"
+  },
+  {
+   "chave": "Agent(name=)",
+   "status": "explicado_aqui",
+   "onde": "## `Agent`: o objeto que conversa com o modelo",
+   "obs": "logs/rastros; dedução pelo nome da variável"
+  },
+  {
+   "chave": ".run_sync",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "AgentRunResult"
+  },
+  {
+   "chave": ".run",
+   "status": "explicado_aqui",
+   "onde": "## Três formas de executar: `.run_sync`, `.run` e `.run_stream`",
+   "obs": "agente_async.py; await"
+  },
+  {
+   "chave": ".run_stream",
+   "status": "explicado_aqui",
+   "onde": "## Três formas de executar: `.run_sync`, `.run` e `.run_stream`",
+   "obs": "async with; StreamedRunResult"
+  },
+  {
+   "chave": ".stream_text",
+   "status": "explicado_aqui",
+   "onde": "## Três formas de executar: `.run_sync`, `.run` e `.run_stream`",
+   "obs": "acumulado x delta=True; debounce_by"
+  },
+  {
+   "chave": ".stream_output",
+   "status": "explicado_aqui",
+   "onde": "### Streaming de saída estruturada: `.stream_output`",
+   "obs": "agente_stream_saida.py; validação parcial"
+  },
+  {
+   "chave": ".get_output",
+   "status": "explicado_aqui",
+   "onde": "## Três formas de executar: `.run_sync`, `.run` e `.run_stream`",
+   "obs": "espera o fluxo e devolve a saída"
+  },
+  {
+   "chave": ".output",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "armadilha: atributo, não método"
+  },
+  {
+   "chave": ".usage",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "RunUsage"
+  },
+  {
+   "chave": ".requests",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "tabela"
+  },
+  {
+   "chave": ".input_tokens",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "tabela"
+  },
+  {
+   "chave": ".output_tokens",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "tabela"
+  },
+  {
+   "chave": ".total_tokens",
+   "status": "explicado_aqui",
+   "onde": "### O objeto de resultado: `.output` e `.usage`",
+   "obs": "tabela"
+  },
+  {
+   "chave": "system_prompt",
+   "status": "explicado_aqui",
+   "onde": "## `instructions` ou `system_prompt`?",
+   "obs": "agente_instrucoes.py; SystemPromptPart viaja no histórico"
+  },
+  {
+   "chave": "ModelSettings",
+   "status": "explicado_aqui",
+   "onde": "## `ModelSettings`: ajustando o modelo",
+   "obs": "agente_configuracoes.py; mescla agente x execução"
+  }
+ ],
+ "adicoes": [
+  {
+   "tipo": "secao",
+   "titulo": "# Capítulo 0.4 — O primeiro agente por dentro",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## `Agent`: o objeto que conversa com o modelo",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### O objeto de resultado: `.output` e `.usage`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## `instructions` ou `system_prompt`?",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Três formas de executar: `.run_sync`, `.run` e `.run_stream`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### Streaming de saída estruturada: `.stream_output`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## `ModelSettings`: ajustando o modelo",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Recapitulando",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-4-anatomia-de-uma-execucao.png",
+   "apos": "introdução"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-4-tres-formas-de-executar.png",
+   "apos": "## Três formas de executar: `.run_sync`, `.run` e `.run_stream`"
+  }
+ ],
+ "imagens": [
+  "modulo-00/img/cap0-4-anatomia-de-uma-execucao.png",
+  "modulo-00/img/cap0-4-tres-formas-de-executar.png"
+ ],
+ "correcoes_sugeridas": []
+}

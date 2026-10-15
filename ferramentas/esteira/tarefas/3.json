@@ -1,0 +1,25 @@
+{
+ "id": "3",
+ "arquivo": "modulo-01/03-camada-de-orquestracao.md",
+ "modulo": 1,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "UsageLimitExceeded",
+  "UsageLimits",
+  "UsageLimits(request_limit=)"
+ ],
+ "apontar": {
+  ".all_messages": "0.5",
+  ".args_as_dict": "0.5",
+  ".content": "0.5",
+  ".new_messages": "0.5",
+  ".parts": "0.5",
+  ".tool_name": "0.5",
+  "ToolCallPart": "0.5",
+  "ToolReturnPart": "0.5",
+  "UserPromptPart": "0.5"
+ },
+ "donos_modulo0": [
+  "0.5"
+ ]
+}

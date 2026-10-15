@@ -1,0 +1,6 @@
+[
+ {"arquivo": "modulo-00/img/cap0-6-esquema-da-ferramenta.png",
+  "prompt": "Diagrama da esquerda para a direita. À esquerda, um cartão de código com três faixas rotuladas: 'nome da função', 'anotações de tipo', 'docstring'. As três faixas apontam, por setas paralelas, para uma caixa central rotulada 'PydanticAI'. Da caixa central sai uma seta para a direita até um cartão rotulado 'esquema JSON'. Desse cartão sai uma seta para um ícone de cérebro rotulado 'modelo'. Abaixo, uma seta de retorno do 'modelo' para o 'esquema JSON' com o rótulo 'argumentos validados'."},
+ {"arquivo": "modulo-00/img/cap0-6-ciclo-de-validacao.png",
+  "prompt": "Fluxograma em ciclo. Caixa 'resposta do modelo' com seta para um losango 'validação Pydantic'. Do losango, seta 'válida' para outro losango 'validador de saída'. Desse losango, seta 'aceita' para uma caixa verde 'resultado.output'. Dos dois losangos saem setas laranja 'falhou' que convergem para uma caixa laranja 'ModelRetry: pedido de correção', e dela uma seta volta para 'resposta do modelo' com o rótulo 'até o limite de retries'."}
+]

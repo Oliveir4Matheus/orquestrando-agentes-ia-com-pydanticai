@@ -1,0 +1,20 @@
+{"capitulo": "32",
+ "simbolos": [
+  {"chave": "LLMJudge", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `LLMJudge`", "obs": ""},
+  {"chave": "LLMJudge(assertion=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `LLMJudge(assertion=)`", "obs": ""},
+  {"chave": "LLMJudge(model=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `LLMJudge(model=)`", "obs": ""},
+  {"chave": "LLMJudge(rubric=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `LLMJudge(rubric=)`", "obs": ""},
+  {"chave": "FunctionModel", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""}
+ ],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Juiz automático e pessoa especialista](img/cap32-juiz-e-pessoa.png)"},
+  {"tipo": "por_dentro", "titulo": "LLMJudge", "apos": "O `LLMJudge` recebe a `rubric`, o `model` e uma configuração de asserção"},
+  {"tipo": "por_dentro", "titulo": "LLMJudge(model=)", "apos": "Por dentro do PydanticAI — `LLMJudge`"},
+  {"tipo": "por_dentro", "titulo": "LLMJudge(rubric=)", "apos": "Por dentro do PydanticAI — `LLMJudge(model=)`"},
+  {"tipo": "por_dentro", "titulo": "LLMJudge(assertion=)", "apos": "Por dentro do PydanticAI — `LLMJudge(rubric=)`"},
+  {"tipo": "secao", "titulo": "Ver o que o juiz recebe", "apos": "As respostas boas passaram, a seca foi reprovada"}
+ ],
+ "imagens": [],
+ "correcoes_sugeridas": [
+  {"trecho": "Em uso real, você omite o `model=`", "problema": "Sem model= usa-se o juiz padrão (openai:gpt-5.2), que exige chave.", "sugestao": "Mencionar o juiz padrão e set_default_judge_model."}
+ ]}

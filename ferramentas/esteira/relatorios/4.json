@@ -1,0 +1,11 @@
+{"capitulo": "4",
+ "simbolos": [
+  {"chave": "Agent", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "run_sync", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "TestModel", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "usado no roteador_offline.py"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Escada de complexidade](img/cap4-escada-de-complexidade.png)"},
+  {"tipo": "secao", "titulo": "Testando o roteador sem API", "apos": "### Armadilha: o roteador que atrapalha"},
+  {"tipo": "exercicio", "titulo": "4.5 Critério corrigido, testado", "apos": "4.4 Seu processo"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

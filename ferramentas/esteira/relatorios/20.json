@@ -1,0 +1,14 @@
+{"capitulo": "20",
+ "simbolos": [
+  {"chave": "Agent/.run_sync/.output", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "instructions/output_type", "status": "apontado_para", "onde": "capítulos 0.4 e 0.6", "obs": ""},
+  {"chave": ".override", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "BaseModel/list[str]/bool", "status": "explicado_aqui", "onde": "### Por que `Avaliacao` valida e `Resultado` não", "obs": "exemplo avaliacao_validada.py"},
+  {"chave": "dataclass", "status": "explicado_aqui", "onde": "### Por que `Avaliacao` valida e `Resultado` não", "obs": "contraste com BaseModel"}
+ ],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "imagem de abertura"},
+  {"tipo": "secao", "titulo": "### Por que `Avaliacao` valida e `Resultado` não", "apos": "Esse é o ganho do padrão"}
+ ],
+ "imagens": [],
+ "correcoes_sugeridas": []}

@@ -1,0 +1,47 @@
+16 imagens pendentes.
+OK    [agy] modulo-00/img/cap0-1-perguntas-de-apoio.png
+OK    [agy] modulo-00/img/cap0-2-o-que-o-framework-le.png
+OK    [agy] modulo-00/img/cap0-1-mapa-do-ecossistema.png
+OK    [agy] modulo-00/img/cap0-2-funcao-vira-ferramenta.png
+OK    [agy] modulo-00/img/cap0-3-ciclo-de-validacao.png
+OK    [agy] modulo-00/img/cap0-2-sequencia-e-gather.png
+OK    [agy] modulo-00/img/cap0-3-validacao-no-agente.png
+OK    [agy] modulo-00/img/cap0-4-tres-formas-de-executar.png
+OK    [agy] modulo-00/img/cap0-4-anatomia-de-uma-execucao.png
+OK    [agy] modulo-00/img/cap0-5-override-no-teste.png
+OK    [agy] modulo-00/img/cap0-6-esquema-da-ferramenta.png
+OK    [agy] modulo-00/img/cap0-6-ciclo-de-validacao.png
+Traceback (most recent call last):
+  File "/home/matheuso/workspace/orquestrando_agentes/livro/ferramentas/gerar_imagens.py", line 76, in <module>
+    main()
+  File "/home/matheuso/workspace/orquestrando_agentes/livro/ferramentas/gerar_imagens.py", line 68, in main
+    resultados = list(pool.map(gerar, faltam))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/matheuso/workspace/orquestrando_agentes/livro/ferramentas/gerar_imagens.py", line 42, in gerar
+    proc = subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['agy', '-p', "Diagrama de sequência com duas colunas verticais: 'Agent' à esquerda e 'modelo' à direita. Quatro setas horizontais, de cima para baixo, sem cruzamento. Seta 1, da esquerda para a direita, rotulada 'ModelRequest: UserPromptPart'. Seta 2, da direita para a esquerda, rotulada 'ModelResponse: ToolCallPart'. Seta 3, da esquerda para a direita, rotulada 'ModelRequest: ToolReturnPart'. Seta 4, da direita para a esquerda, rotulada 'ModelResponse: TextPart'. Setas de requisição em azul e de resposta em verde. Nenhum outro texto além desses rótulos. Estilo: ilustração didática vetorial plana (flat), fundo branco, 16:9, paleta azul-marinho (#1F3A5F), azul (#2F80ED), verde (#27AE60), laranja (#F2994A) e cinza claro; cantos arredondados, setas claras SEM cruzamentos, tipografia sans-serif legível; TODO o texto em português do Brasil exatamente como indicado, sem erros e SEM acrescentar nenhum outro texto, número ou porcentagem; sem marcas d'água; poucos elementos, muito espaço em branco. Salve APENAS o PNG (nenhum HTML ou outro arquivo) com o nome indicado neste diretório e responda só com o caminho. Nome do arquivo: cap0-5-ciclo-de-mensagens.png", '--dangerously-skip-permissions']' timed out after 1200 seconds

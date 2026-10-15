@@ -1,0 +1,13 @@
+{
+ "id": "15",
+ "arquivo": "modulo-05/15-recuperacao-de-documentos-rag.md",
+ "modulo": 5,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  "Embedder",
+  "TestEmbeddingModel",
+  "TestEmbeddingModel(dimensions=)"
+ ],
+ "apontar": {},
+ "donos_modulo0": []
+}

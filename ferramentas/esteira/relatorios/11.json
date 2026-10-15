@@ -1,0 +1,13 @@
+{"capitulo": "11",
+ "simbolos": [
+  {"chave": "Field(description=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Field(description=...)`", "obs": ""},
+  {"chave": "Field(pattern=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Field(pattern=...)`", "obs": ""},
+  {"chave": "Annotated", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "Literal", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""},
+  {"chave": "RetryPromptPart", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![O contrato de uma ferramenta]"},
+  {"tipo": "por_dentro", "titulo": "Field(description=...)", "apos": "Na clara, o nome é um verbo e um objeto"},
+  {"tipo": "por_dentro", "titulo": "Field(pattern=...)", "apos": "Por dentro do PydanticAI — Field(description=...)"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

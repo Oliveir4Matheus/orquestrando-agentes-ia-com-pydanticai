@@ -1,0 +1,13 @@
+{
+ "id": "12",
+ "arquivo": "modulo-04/12-a-interface-entre-agente-e-computador.md",
+ "modulo": 4,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  "ModelRetry": "0.6"
+ },
+ "donos_modulo0": [
+  "0.6"
+ ]
+}

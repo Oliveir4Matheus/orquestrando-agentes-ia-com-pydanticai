@@ -1,0 +1,11 @@
+{"capitulo": "10",
+ "simbolos": [
+  {"chave": ".dump_json", "status": "apontado_para", "onde": "capítulo 0.3", "obs": ""},
+  {"chave": ".part_kind", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": ".validate_json", "status": "apontado_para", "onde": "capítulo 0.3", "obs": ""},
+  {"chave": "ModelMessagesTypeAdapter", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Tipos de memória de um agente]"},
+  {"tipo": "secao", "titulo": "O que acontece com um arquivo de sessão inválido", "apos": "O identificador da sessão é a chave de tudo."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

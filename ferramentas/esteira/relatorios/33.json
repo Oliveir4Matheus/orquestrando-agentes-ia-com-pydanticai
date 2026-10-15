@@ -1,0 +1,7 @@
+{"capitulo": "33",
+ "simbolos": [],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "PydanticAI neste capítulo", "apos": "![Avaliação contínua em camadas](img/cap33-avaliacao-continua.png)"},
+  {"tipo": "armadilha", "titulo": "suíte vazia no portão", "apos": "A função `saturada` detecta o que a Anthropic chama de **saturação**"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

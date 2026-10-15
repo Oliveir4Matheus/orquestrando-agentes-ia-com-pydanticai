@@ -1,0 +1,21 @@
+{"capitulo": "3",
+ "simbolos": [
+  {"chave": "UsageLimitExceeded", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `UsageLimitExceeded`", "obs": ""},
+  {"chave": "UsageLimits", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `UsageLimits`", "obs": ""},
+  {"chave": "UsageLimits(request_limit=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `UsageLimits(request_limit=)`", "obs": ""},
+  {"chave": ".all_messages", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": ".args_as_dict", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": ".content", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": ".new_messages", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": ".parts", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": ".tool_name", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "ToolCallPart", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "ToolReturnPart", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "UserPromptPart", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Ciclo de orquestração]"},
+  {"tipo": "por_dentro", "titulo": "UsageLimits", "apos": "o ciclo parou antes de gastar mais."},
+  {"tipo": "por_dentro", "titulo": "UsageLimits(request_limit=)", "apos": "Por dentro do PydanticAI — UsageLimits"},
+  {"tipo": "por_dentro", "titulo": "UsageLimitExceeded", "apos": "Por dentro do PydanticAI — UsageLimits(request_limit=)"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

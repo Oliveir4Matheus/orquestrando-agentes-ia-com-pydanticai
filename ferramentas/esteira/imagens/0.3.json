@@ -1,0 +1,6 @@
+[
+ {"arquivo": "modulo-00/img/cap0-3-ciclo-de-validacao.png",
+  "prompt": "Diagrama da esquerda para a direita com três blocos ligados por setas, sem cruzamento. Bloco da esquerda rotulado 'dados brutos', com duas etiquetas menores dentro: 'dicionário' e 'texto JSON'. Seta para a direita rotulada 'validar' até o bloco central rotulado 'objeto Python'. Do bloco central, seta para a direita rotulada 'serializar' até o bloco da direita rotulado 'dicionário ou JSON'. Abaixo da seta 'validar', um pequeno balão laranja rotulado 'ValidationError'. Nenhum outro texto além desses rótulos."},
+ {"arquivo": "modulo-00/img/cap0-3-validacao-no-agente.png",
+  "prompt": "Diagrama de ciclo com quatro caixas. Caixa 'Produto' no alto à esquerda com uma seta rotulada 'esquema JSON' para a caixa 'modelo de linguagem' no alto à direita. Da caixa 'modelo de linguagem', seta para baixo rotulada 'resposta JSON' até a caixa 'validação Pydantic' embaixo à direita. Da caixa 'validação Pydantic' saem duas setas: uma verde para a esquerda até a caixa 'resultado.output' embaixo à esquerda, rotulada 'válido'; e uma laranja curva de volta para cima até 'modelo de linguagem', rotulada 'erros: tente de novo'. Setas sem cruzamento. Nenhum outro texto além desses rótulos."}
+]

@@ -1,0 +1,10 @@
+{"capitulo": "25",
+ "simbolos": [
+  {"chave": "Agent/.run/.output", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": ".override", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""},
+  {"chave": "output_type/BaseModel/Field(ge, le)", "status": "apontado_para", "onde": "capítulos 0.3 e 0.6", "obs": "exemplo parecer_validacao.py"}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Topologias de colaboração](img/cap25-topologias.png)"},
+  {"tipo": "secao", "titulo": "Validação de Parecer com Field(ge, le)", "apos": "O valor está na composição: nenhum agente isolado teria entregue o conjunto."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

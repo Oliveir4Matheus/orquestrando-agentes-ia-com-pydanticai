@@ -1,0 +1,16 @@
+{
+ "id": "35",
+ "arquivo": "modulo-10/35-execucao-duravel.md",
+ "modulo": 10,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [
+  ".iter"
+ ],
+ "apontar": {
+  "py:async for": "0.2",
+  "py:async with": "0.2"
+ },
+ "donos_modulo0": [
+  "0.2"
+ ]
+}

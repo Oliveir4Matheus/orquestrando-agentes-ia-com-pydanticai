@@ -1,0 +1,3478 @@
+{
+ "capitulos": [
+  {
+   "id": "1",
+   "modulo": 1,
+   "arquivo": "modulo-01/01-chatbot-workflow-agente.md",
+   "palavras": 1479,
+   "simbolos_novos": [
+    {
+     "chave": ".output",
+     "nome": "output",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".requests",
+     "nome": "requests",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".run_sync",
+     "nome": "run_sync",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".tool_plain",
+     "nome": "tool_plain",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": ".usage",
+     "nome": "usage",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "@tool_plain",
+     "nome": "tool_plain",
+     "tipo": "decorador",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Agent",
+     "nome": "Agent",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "nome": "instructions",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "py:X | None",
+     "nome": "X | None",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "py:docstring",
+     "nome": "docstring",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": []
+  },
+  {
+   "id": "2",
+   "modulo": 1,
+   "arquivo": "modulo-01/02-modelo-ferramentas-instrucoes.md",
+   "palavras": 1712,
+   "simbolos_novos": [
+    {
+     "chave": ".function_tools",
+     "nome": "function_tools",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "AgentInfo",
+     "nome": "AgentInfo",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "FunctionModel",
+     "nome": "FunctionModel",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ModelResponse",
+     "nome": "ModelResponse",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "nome": "parts",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "TextPart",
+     "nome": "TextPart",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "modulo": 1,
+   "arquivo": "modulo-01/03-camada-de-orquestracao.md",
+   "palavras": 1585,
+   "simbolos_novos": [
+    {
+     "chave": ".all_messages",
+     "nome": "all_messages",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": ".args_as_dict",
+     "nome": "args_as_dict",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".content",
+     "nome": "content",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".new_messages",
+     "nome": "new_messages",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": ".parts",
+     "nome": "parts",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".tool_name",
+     "nome": "tool_name",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ToolCallPart",
+     "nome": "ToolCallPart",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ToolReturnPart",
+     "nome": "ToolReturnPart",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "UsageLimitExceeded",
+     "nome": "UsageLimitExceeded",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "UsageLimits",
+     "nome": "UsageLimits",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "UsageLimits(request_limit=)",
+     "nome": "request_limit",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "UserPromptPart",
+     "nome": "UserPromptPart",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".requests",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "modulo": 1,
+   "arquivo": "modulo-01/04-construir-ou-nao-construir.md",
+   "palavras": 1387,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "modulo": 2,
+   "arquivo": "modulo-02/05-raciocinar-e-agir.md",
+   "palavras": 2454,
+   "simbolos_novos": [
+    {
+     "chave": ".override",
+     "nome": "override",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Agent(tools=)",
+     "nome": "tools",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "py:lambda",
+     "nome": "lambda",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "py:with",
+     "nome": "with",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "modulo": 2,
+   "arquivo": "modulo-02/06-raciocinio-explicito.md",
+   "palavras": 2382,
+   "simbolos_novos": [
+    {
+     "chave": ".output_tools",
+     "nome": "output_tools",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "nome": "output_type",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "BaseModel",
+     "nome": "BaseModel",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Field",
+     "nome": "Field",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Field(ge=)",
+     "nome": "ge",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Field(le=)",
+     "nome": "le",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "ModelSettings",
+     "nome": "ModelSettings",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "ModelSettings(thinking=)",
+     "nome": "thinking",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "nome": "anotação",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "modulo": 2,
+   "arquivo": "modulo-02/07-aprender-com-os-erros.md",
+   "palavras": 1671,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "modulo": 3,
+   "arquivo": "modulo-03/08-contexto-e-um-recurso-finito.md",
+   "palavras": 2265,
+   "simbolos_novos": [
+    {
+     "chave": ".input_tokens",
+     "nome": "input_tokens",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": ".run",
+     "nome": "run",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "ModelMessage",
+     "nome": "ModelMessage",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ModelRequest",
+     "nome": "ModelRequest",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ProcessHistory",
+     "nome": "ProcessHistory",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "py:async def",
+     "nome": "async def",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "py:await",
+     "nome": "await",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "UserPromptPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "modulo": 3,
+   "arquivo": "modulo-03/09-notas-e-recuperacao-sob-demanda.md",
+   "palavras": 2359,
+   "simbolos_novos": [
+    {
+     "chave": ".deps",
+     "nome": "deps",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": ".instructions",
+     "nome": "instructions",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": ".tool",
+     "nome": "tool",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "@dataclass",
+     "nome": "dataclass",
+     "tipo": "decorador",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "@instructions",
+     "nome": "instructions",
+     "tipo": "decorador",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "@tool",
+     "nome": "tool",
+     "tipo": "decorador",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Agent(deps_type=)",
+     "nome": "deps_type",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "RunContext",
+     "nome": "RunContext",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "RunContext[...]",
+     "nome": "RunContext[",
+     "tipo": "genérico",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "modulo": 3,
+   "arquivo": "modulo-03/10-arquitetura-de-memoria.md",
+   "palavras": 2501,
+   "simbolos_novos": [
+    {
+     "chave": ".dump_json",
+     "nome": "dump_json",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".part_kind",
+     "nome": "part_kind",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": ".validate_json",
+     "nome": "validate_json",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ModelMessagesTypeAdapter",
+     "nome": "ModelMessagesTypeAdapter",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".deps",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".output_tools",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelMessage",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "modulo": 4,
+   "arquivo": "modulo-04/11-o-contrato-de-uma-ferramenta.md",
+   "palavras": 2386,
+   "simbolos_novos": [
+    {
+     "chave": "Annotated",
+     "nome": "Annotated",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Field(description=)",
+     "nome": "description",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Field(pattern=)",
+     "nome": "pattern",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Literal",
+     "nome": "Literal",
+     "tipo": "python",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "RetryPromptPart",
+     "nome": "RetryPromptPart",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".deps",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(deps_type=)",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "Field",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "modulo": 4,
+   "arquivo": "modulo-04/12-a-interface-entre-agente-e-computador.md",
+   "palavras": 2542,
+   "simbolos_novos": [
+    {
+     "chave": "ModelRetry",
+     "nome": "ModelRetry",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".args_as_dict",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool_name",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RetryPromptPart",
+     "primeira_vez": "11"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "modulo": 4,
+   "arquivo": "modulo-04/13-acoes-em-json-ou-em-codigo.md",
+   "palavras": 3068,
+   "simbolos_novos": [
+    {
+     "chave": ".tool_calls",
+     "nome": "tool_calls",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".requests",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelRetry",
+     "primeira_vez": "12"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "modulo": 5,
+   "arquivo": "modulo-05/14-a-escada-de-customizacao.md",
+   "palavras": 2545,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "modulo": 5,
+   "arquivo": "modulo-05/15-recuperacao-de-documentos-rag.md",
+   "palavras": 3106,
+   "simbolos_novos": [
+    {
+     "chave": "Embedder",
+     "nome": "Embedder",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "TestEmbeddingModel",
+     "nome": "TestEmbeddingModel",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "TestEmbeddingModel(dimensions=)",
+     "nome": "dimensions",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "modulo": 5,
+   "arquivo": "modulo-05/16-ajuste-fino-com-lora.md",
+   "palavras": 2470,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "modulo": 5,
+   "arquivo": "modulo-05/17-ancoragem-nos-fatos.md",
+   "palavras": 2148,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".output_tools",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "AgentInfo",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "modulo": 6,
+   "arquivo": "modulo-06/18-encadeamento-e-roteamento.md",
+   "palavras": 2154,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Literal",
+     "primeira_vez": "11"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "modulo": 6,
+   "arquivo": "modulo-06/19-paralelizacao-e-orquestrador-trabalhadores.md",
+   "palavras": 2316,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Literal",
+     "primeira_vez": "11"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "modulo": 6,
+   "arquivo": "modulo-06/20-avaliador-otimizador.md",
+   "palavras": 1665,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "modulo": 6,
+   "arquivo": "modulo-06/21-blocos-combinaveis.md",
+   "palavras": 2515,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Literal",
+     "primeira_vez": "11"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "modulo": 7,
+   "arquivo": "modulo-07/22-gerente-e-transferencia.md",
+   "palavras": 2378,
+   "simbolos_novos": [
+    {
+     "chave": "Agent(name=)",
+     "nome": "name",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".requests",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "Literal",
+     "primeira_vez": "11"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "modulo": 7,
+   "arquivo": "modulo-07/23-orquestrador-em-producao.md",
+   "palavras": 2410,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".requests",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "UsageLimits",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "UsageLimits(request_limit=)",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "modulo": 7,
+   "arquivo": "modulo-07/24-supervisor-e-colaboradores.md",
+   "palavras": 1905,
+   "simbolos_novos": [
+    {
+     "chave": ".output_validator",
+     "nome": "output_validator",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "@output_validator",
+     "nome": "output_validator",
+     "tipo": "decorador",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Tool",
+     "nome": "Tool",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Tool(description=)",
+     "nome": "description",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Tool(name=)",
+     "nome": "name",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".deps",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(deps_type=)",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "Literal",
+     "primeira_vez": "11"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelRetry",
+     "primeira_vez": "12"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "modulo": 7,
+   "arquivo": "modulo-07/25-topologias-de-colaboracao.md",
+   "palavras": 2839,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Field",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Field(ge=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "Field(le=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "modulo": 7,
+   "arquivo": "modulo-07/26-protocolos-mcp-e-a2a.md",
+   "palavras": 2300,
+   "simbolos_novos": [
+    {
+     "chave": "@resource",
+     "nome": "resource",
+     "tipo": "decorador",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Agent(toolsets=)",
+     "nome": "toolsets",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "FastMCP",
+     "nome": "FastMCP",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "MCPToolset",
+     "nome": "MCPToolset",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".function_tools",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "modulo": 8,
+   "arquivo": "modulo-08/27-guardrails-em-camadas.md",
+   "palavras": 2369,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".output_validator",
+     "primeira_vez": "24"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "@output_validator",
+     "primeira_vez": "24"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "BaseModel",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "ModelRetry",
+     "primeira_vez": "12"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "modulo": 8,
+   "arquivo": "modulo-08/28-risco-por-ferramenta.md",
+   "palavras": 2214,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".deps",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".function_tools",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(deps_type=)",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "modulo": 8,
+   "arquivo": "modulo-08/29-humano-no-ciclo.md",
+   "palavras": 2716,
+   "simbolos_novos": [
+    {
+     "chave": ".tool_call_id",
+     "nome": "tool_call_id",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "ApprovalRequired",
+     "nome": "ApprovalRequired",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "ApprovalRequired(metadata=)",
+     "nome": "metadata",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "DeferredToolRequests",
+     "nome": "DeferredToolRequests",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "DeferredToolResults",
+     "nome": "DeferredToolResults",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "ToolDenied",
+     "nome": "ToolDenied",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".args_as_dict",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".tool_name",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "Agent(output_type=)",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "modulo": 9,
+   "arquivo": "modulo-09/30-tarefas-tentativas-e-avaliadores.md",
+   "palavras": 2319,
+   "simbolos_novos": [
+    {
+     "chave": "Case",
+     "nome": "Case",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Case(expected_output=)",
+     "nome": "expected_output",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Case(inputs=)",
+     "nome": "inputs",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Case(name=)",
+     "nome": "name",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Dataset",
+     "nome": "Dataset",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "Dataset(cases=)",
+     "nome": "cases",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Dataset(evaluators=)",
+     "nome": "evaluators",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Dataset(name=)",
+     "nome": "name",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "Evaluator",
+     "nome": "Evaluator",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "EvaluatorContext",
+     "nome": "EvaluatorContext",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "MaxToolCalls",
+     "nome": "MaxToolCalls",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "MaxToolCalls(max_calls=)",
+     "nome": "max_calls",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "Agent(tools=)",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "modulo": 9,
+   "arquivo": "modulo-09/31-trajetoria-e-uso-de-ferramentas.md",
+   "palavras": 2496,
+   "simbolos_novos": [
+    {
+     "chave": "Case(evaluators=)",
+     "nome": "evaluators",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "MaxModelRequests",
+     "nome": "MaxModelRequests",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "MaxModelRequests(max_requests=)",
+     "nome": "max_requests",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "TrajectoryMatch",
+     "nome": "TrajectoryMatch",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "TrajectoryMatch(expected_trajectory=)",
+     "nome": "expected_trajectory",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "TrajectoryMatch(order=)",
+     "nome": "order",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "Case",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(inputs=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(name=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(cases=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(evaluators=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(name=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "modulo": 9,
+   "arquivo": "modulo-09/32-resposta-final-e-juizes.md",
+   "palavras": 2258,
+   "simbolos_novos": [
+    {
+     "chave": "LLMJudge",
+     "nome": "LLMJudge",
+     "tipo": "importação",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "LLMJudge(assertion=)",
+     "nome": "assertion",
+     "tipo": "argumento",
+     "mencionado_no_texto": false
+    },
+    {
+     "chave": "LLMJudge(model=)",
+     "nome": "model",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "LLMJudge(rubric=)",
+     "nome": "rubric",
+     "tipo": "argumento",
+     "mencionado_no_texto": true
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".content",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".output_tools",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "Case",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(inputs=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(name=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(cases=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(evaluators=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(name=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "modulo": 9,
+   "arquivo": "modulo-09/33-benchmarks-e-avaliacao-continua.md",
+   "palavras": 2712,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": "Dataset",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(cases=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(evaluators=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Dataset(name=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "modulo": 10,
+   "arquivo": "modulo-10/34-observabilidade.md",
+   "palavras": 1637,
+   "simbolos_novos": [
+    {
+     "chave": "logfire",
+     "nome": "logfire",
+     "tipo": "importação",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run_sync",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "@tool_plain",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "modulo": 10,
+   "arquivo": "modulo-10/35-execucao-duravel.md",
+   "palavras": 2492,
+   "simbolos_novos": [
+    {
+     "chave": ".iter",
+     "nome": "iter",
+     "tipo": "atributo/método",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "py:async for",
+     "nome": "async for",
+     "tipo": "python",
+     "mencionado_no_texto": true
+    },
+    {
+     "chave": "py:async with",
+     "nome": "async with",
+     "tipo": "python",
+     "mencionado_no_texto": false
+    }
+   ],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".dump_json",
+     "primeira_vez": "10"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".parts",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": ".tool_call_id",
+     "primeira_vez": "29"
+    },
+    {
+     "chave": ".validate_json",
+     "primeira_vez": "10"
+    },
+    {
+     "chave": "@tool",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "FunctionModel",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelMessagesTypeAdapter",
+     "primeira_vez": "10"
+    },
+    {
+     "chave": "ModelResponse",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ModelResponse(parts=)",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "RunContext",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "RunContext[...]",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "TextPart",
+     "primeira_vez": "2"
+    },
+    {
+     "chave": "ToolCallPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "ToolReturnPart",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:lambda",
+     "primeira_vez": "5"
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "modulo": 10,
+   "arquivo": "modulo-10/36-avaliacao-em-producao.md",
+   "palavras": 2268,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": "@dataclass",
+     "primeira_vez": "9"
+    },
+    {
+     "chave": "Case",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(expected_output=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(inputs=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "Case(name=)",
+     "primeira_vez": "30"
+    },
+    {
+     "chave": "py:X | None",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "py:anotação de tipo",
+     "primeira_vez": "6"
+    },
+    {
+     "chave": "py:docstring",
+     "primeira_vez": "1"
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "modulo": 10,
+   "arquivo": "modulo-10/37-deploy-gerenciado.md",
+   "palavras": 2236,
+   "simbolos_novos": [],
+   "simbolos_reusados": [
+    {
+     "chave": ".all_messages",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": ".dump_json",
+     "primeira_vez": "10"
+    },
+    {
+     "chave": ".output",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".override",
+     "primeira_vez": "5"
+    },
+    {
+     "chave": ".requests",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".run",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": ".usage",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": ".validate_json",
+     "primeira_vez": "10"
+    },
+    {
+     "chave": "Agent",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(instructions=)",
+     "primeira_vez": "1"
+    },
+    {
+     "chave": "Agent(name=)",
+     "primeira_vez": "22"
+    },
+    {
+     "chave": "ModelMessagesTypeAdapter",
+     "primeira_vez": "10"
+    },
+    {
+     "chave": "UsageLimits",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "UsageLimits(request_limit=)",
+     "primeira_vez": "3"
+    },
+    {
+     "chave": "py:async def",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:async with",
+     "primeira_vez": "35"
+    },
+    {
+     "chave": "py:await",
+     "primeira_vez": "8"
+    },
+    {
+     "chave": "py:with",
+     "primeira_vez": "5"
+    }
+   ]
+  }
+ ],
+ "primeira_vez": {
+  ".output": "1",
+  ".requests": "1",
+  ".run_sync": "1",
+  ".tool_plain": "1",
+  ".usage": "1",
+  "@tool_plain": "1",
+  "Agent": "1",
+  "Agent(instructions=)": "1",
+  "py:X | None": "1",
+  "py:docstring": "1",
+  ".function_tools": "2",
+  "AgentInfo": "2",
+  "FunctionModel": "2",
+  "ModelResponse": "2",
+  "ModelResponse(parts=)": "2",
+  "TextPart": "2",
+  ".all_messages": "3",
+  ".args_as_dict": "3",
+  ".content": "3",
+  ".new_messages": "3",
+  ".parts": "3",
+  ".tool_name": "3",
+  "ToolCallPart": "3",
+  "ToolReturnPart": "3",
+  "UsageLimitExceeded": "3",
+  "UsageLimits": "3",
+  "UsageLimits(request_limit=)": "3",
+  "UserPromptPart": "3",
+  ".override": "5",
+  "Agent(tools=)": "5",
+  "py:lambda": "5",
+  "py:with": "5",
+  ".output_tools": "6",
+  "Agent(output_type=)": "6",
+  "BaseModel": "6",
+  "Field": "6",
+  "Field(ge=)": "6",
+  "Field(le=)": "6",
+  "ModelSettings": "6",
+  "ModelSettings(thinking=)": "6",
+  "py:anotação de tipo": "6",
+  ".input_tokens": "8",
+  ".run": "8",
+  "ModelMessage": "8",
+  "ModelRequest": "8",
+  "ProcessHistory": "8",
+  "py:async def": "8",
+  "py:await": "8",
+  ".deps": "9",
+  ".instructions": "9",
+  ".tool": "9",
+  "@dataclass": "9",
+  "@instructions": "9",
+  "@tool": "9",
+  "Agent(deps_type=)": "9",
+  "RunContext": "9",
+  "RunContext[...]": "9",
+  ".dump_json": "10",
+  ".part_kind": "10",
+  ".validate_json": "10",
+  "ModelMessagesTypeAdapter": "10",
+  "Annotated": "11",
+  "Field(description=)": "11",
+  "Field(pattern=)": "11",
+  "Literal": "11",
+  "RetryPromptPart": "11",
+  "ModelRetry": "12",
+  ".tool_calls": "13",
+  "Embedder": "15",
+  "TestEmbeddingModel": "15",
+  "TestEmbeddingModel(dimensions=)": "15",
+  "Agent(name=)": "22",
+  ".output_validator": "24",
+  "@output_validator": "24",
+  "Tool": "24",
+  "Tool(description=)": "24",
+  "Tool(name=)": "24",
+  "@resource": "26",
+  "Agent(toolsets=)": "26",
+  "FastMCP": "26",
+  "MCPToolset": "26",
+  ".tool_call_id": "29",
+  "ApprovalRequired": "29",
+  "ApprovalRequired(metadata=)": "29",
+  "DeferredToolRequests": "29",
+  "DeferredToolResults": "29",
+  "ToolDenied": "29",
+  "Case": "30",
+  "Case(expected_output=)": "30",
+  "Case(inputs=)": "30",
+  "Case(name=)": "30",
+  "Dataset": "30",
+  "Dataset(cases=)": "30",
+  "Dataset(evaluators=)": "30",
+  "Dataset(name=)": "30",
+  "Evaluator": "30",
+  "EvaluatorContext": "30",
+  "MaxToolCalls": "30",
+  "MaxToolCalls(max_calls=)": "30",
+  "Case(evaluators=)": "31",
+  "MaxModelRequests": "31",
+  "MaxModelRequests(max_requests=)": "31",
+  "TrajectoryMatch": "31",
+  "TrajectoryMatch(expected_trajectory=)": "31",
+  "TrajectoryMatch(order=)": "31",
+  "LLMJudge": "32",
+  "LLMJudge(assertion=)": "32",
+  "LLMJudge(model=)": "32",
+  "LLMJudge(rubric=)": "32",
+  "logfire": "34",
+  ".iter": "35",
+  "py:async for": "35",
+  "py:async with": "35"
+ }
+}

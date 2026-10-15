@@ -1,0 +1,18 @@
+{"capitulo": "29",
+ "simbolos": [
+  {"chave": "ApprovalRequired", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `ApprovalRequired`", "obs": ""},
+  {"chave": "ApprovalRequired(metadata=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `ApprovalRequired(metadata=)`", "obs": ""},
+  {"chave": "DeferredToolRequests", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `DeferredToolRequests`", "obs": ""},
+  {"chave": "DeferredToolResults", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `DeferredToolResults`", "obs": ""},
+  {"chave": "ToolDenied", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `ToolDenied`", "obs": ""},
+  {"chave": ".tool_call_id", "status": "apontado_para", "onde": "capítulo 0.5", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Fluxo de aprovação humana](img/cap29-aprovacao-humana.png)"},
+  {"tipo": "por_dentro", "titulo": "DeferredToolRequests", "apos": "**O tipo de saída.**"},
+  {"tipo": "por_dentro", "titulo": "ApprovalRequired", "apos": "**A ferramenta e a regra de risco.**"},
+  {"tipo": "por_dentro", "titulo": "ApprovalRequired(metadata=)", "apos": "**A ferramenta e a regra de risco.**"},
+  {"tipo": "por_dentro", "titulo": "DeferredToolResults", "apos": "**O laço `atender`.**"},
+  {"tipo": "por_dentro", "titulo": "ToolDenied", "apos": "**O laço `atender`.**"},
+  {"tipo": "secao", "titulo": "Espiando o pedido pendente", "apos": "Por dentro do PydanticAI — `ToolDenied`"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

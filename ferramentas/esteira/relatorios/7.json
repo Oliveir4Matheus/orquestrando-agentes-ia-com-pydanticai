@@ -1,0 +1,12 @@
+{"capitulo": "7",
+ "simbolos": [
+  {"chave": "Agent", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": ".run_sync", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": ".output", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "FunctionModel", "status": "apontado_para", "onde": "capítulo 0.5", "obs": "também detalhado na subseção nova"},
+  {"chave": ".override", "status": "explicado_aqui", "onde": "Como o modelo simulado lê o prompt", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![O ciclo Reflexion](img/cap7-reflexion.png)"},
+  {"tipo": "secao", "titulo": "Como o modelo simulado lê o prompt", "apos": "Execute `python reflexion.py` com o modelo real."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

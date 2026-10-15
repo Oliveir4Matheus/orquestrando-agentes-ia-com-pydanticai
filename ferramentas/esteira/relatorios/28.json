@@ -1,0 +1,6 @@
+{"capitulo": "28",
+ "simbolos": [],
+ "adicoes": [{"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Camadas de risco](img/cap28-camadas-de-risco.png)"},
+  {"tipo": "secao", "titulo": "Duas peças de `dataclass` que o capítulo usa", "apos": "Armadilha: confiar na cliente que se diz autorizada"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

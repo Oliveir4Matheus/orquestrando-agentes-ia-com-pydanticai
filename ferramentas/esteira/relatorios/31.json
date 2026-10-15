@@ -1,0 +1,18 @@
+{"capitulo": "31",
+ "simbolos": [
+  {"chave": "Case(evaluators=)", "status": "explicado_aqui", "onde": "Por dentro — `Case(evaluators=)`", "obs": ""},
+  {"chave": "MaxModelRequests", "status": "explicado_aqui", "onde": "Por dentro — `MaxModelRequests`", "obs": ""},
+  {"chave": "MaxModelRequests(max_requests=)", "status": "explicado_aqui", "onde": "Por dentro — `MaxModelRequests(max_requests=)`", "obs": ""},
+  {"chave": "TrajectoryMatch", "status": "explicado_aqui", "onde": "Por dentro — `TrajectoryMatch`", "obs": ""},
+  {"chave": "TrajectoryMatch(expected_trajectory=)", "status": "explicado_aqui", "onde": "Por dentro — `TrajectoryMatch(expected_trajectory=)`", "obs": ""},
+  {"chave": "TrajectoryMatch(order=)", "status": "explicado_aqui", "onde": "Por dentro — `TrajectoryMatch(order=)`", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Trajetória esperada e real](img/cap31-trajetoria.png)"},
+  {"tipo": "por_dentro", "titulo": "Case(evaluators=)", "apos": "Um detalhe de projeto"},
+  {"tipo": "por_dentro", "titulo": "TrajectoryMatch", "apos": "Um detalhe de projeto"},
+  {"tipo": "por_dentro", "titulo": "TrajectoryMatch(expected_trajectory=)", "apos": "Um detalhe de projeto"},
+  {"tipo": "por_dentro", "titulo": "TrajectoryMatch(order=)", "apos": "Um detalhe de projeto"},
+  {"tipo": "por_dentro", "titulo": "MaxModelRequests", "apos": "Um detalhe de projeto"},
+  {"tipo": "por_dentro", "titulo": "MaxModelRequests(max_requests=)", "apos": "Um detalhe de projeto"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

@@ -1,0 +1,17 @@
+{
+ "id": "24",
+ "arquivo": "modulo-07/24-supervisor-e-colaboradores.md",
+ "modulo": 7,
+ "raiz": "/home/matheuso/workspace/orquestrando_agentes/livro",
+ "explicar_aqui": [],
+ "apontar": {
+  ".output_validator": "0.6",
+  "@output_validator": "0.6",
+  "Tool": "0.6",
+  "Tool(description=)": "0.6",
+  "Tool(name=)": "0.6"
+ },
+ "donos_modulo0": [
+  "0.6"
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "capitulo": "0.5",
+ "simbolos": [
+  {
+   "chave": "ModelMessage",
+   "status": "explicado_aqui",
+   "onde": "## O que trafega: `ModelRequest` e `ModelResponse`",
+   "obs": "união ModelRequest | ModelResponse; discriminador kind"
+  },
+  {
+   "chave": "ModelRequest",
+   "status": "explicado_aqui",
+   "onde": "## O que trafega: `ModelRequest` e `ModelResponse`",
+   "obs": "mensagens_conversa.py; kind='request'"
+  },
+  {
+   "chave": "ModelResponse",
+   "status": "explicado_aqui",
+   "onde": "## O que trafega: `ModelRequest` e `ModelResponse`",
+   "obs": "kind='response'"
+  },
+  {
+   "chave": "ModelResponse(parts=)",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": "teste_functionmodel.py; resposta montada à mão"
+  },
+  {
+   "chave": "TextPart",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "mensagens_partes.py; tabela de partes"
+  },
+  {
+   "chave": "ToolCallPart",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "mensagens_partes.py; tabela de partes"
+  },
+  {
+   "chave": "ToolReturnPart",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "mensagens_partes.py; liga pelo tool_call_id"
+  },
+  {
+   "chave": "RetryPromptPart",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": "gerada por ModelRetry; teste_functionmodel.py"
+  },
+  {
+   "chave": "UserPromptPart",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "mensagens_partes.py"
+  },
+  {
+   "chave": ".parts",
+   "status": "explicado_aqui",
+   "onde": "## O que trafega: `ModelRequest` e `ModelResponse`",
+   "obs": "lista de partes"
+  },
+  {
+   "chave": ".part_kind",
+   "status": "explicado_aqui",
+   "onde": "## O que trafega: `ModelRequest` e `ModelResponse`",
+   "obs": "valores na tabela"
+  },
+  {
+   "chave": ".content",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "carga útil; float no retorno"
+  },
+  {
+   "chave": ".tool_name",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": ""
+  },
+  {
+   "chave": ".args_as_dict",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "dict ou JSON → dict; demonstrado em teste_functionmodel.py"
+  },
+  {
+   "chave": ".tool_call_id",
+   "status": "explicado_aqui",
+   "onde": "### As partes por dentro",
+   "obs": "liga chamada e retorno; gerado se omitido"
+  },
+  {
+   "chave": ".args",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": "texto JSON x dict"
+  },
+  {
+   "chave": "ModelMessagesTypeAdapter",
+   "status": "explicado_aqui",
+   "onde": "### Gravar e recuperar: `ModelMessagesTypeAdapter`",
+   "obs": "mensagens_salvar.py; dump_json/validate_json"
+  },
+  {
+   "chave": ".all_messages",
+   "status": "explicado_aqui",
+   "onde": "## Memória de conversa: `message_history`",
+   "obs": "mensagens_historico.py; método"
+  },
+  {
+   "chave": ".new_messages",
+   "status": "explicado_aqui",
+   "onde": "## Memória de conversa: `message_history`",
+   "obs": "armadilha: não usar para continuar"
+  },
+  {
+   "chave": "message_history",
+   "status": "explicado_aqui",
+   "onde": "## Memória de conversa: `message_history`",
+   "obs": "mensagens_historico.py"
+  },
+  {
+   "chave": "FunctionModel",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": "teste_functionmodel.py; armadilha do laço infinito"
+  },
+  {
+   "chave": "AgentInfo",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": ""
+  },
+  {
+   "chave": ".function_tools",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": "ToolDefinition: name, description, esquema"
+  },
+  {
+   "chave": ".override",
+   "status": "explicado_aqui",
+   "onde": "## Testando o agente de produção: `.override` e `ALLOW_MODEL_REQUESTS`",
+   "obs": "teste_override.py; agente no nível do módulo"
+  },
+  {
+   "chave": "TestModel",
+   "status": "explicado_aqui",
+   "onde": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "obs": "call_tools, custom_output_text, custom_output_args"
+  },
+  {
+   "chave": "capture_run_messages",
+   "status": "explicado_aqui",
+   "onde": "### Inspecionar uma execução: `capture_run_messages`",
+   "obs": "funciona mesmo com falha"
+  },
+  {
+   "chave": "ALLOW_MODEL_REQUESTS",
+   "status": "explicado_aqui",
+   "onde": "## Testando o agente de produção: `.override` e `ALLOW_MODEL_REQUESTS`",
+   "obs": "RuntimeError; modelos de teste continuam permitidos"
+  }
+ ],
+ "adicoes": [
+  {
+   "tipo": "secao",
+   "titulo": "# Capítulo 0.5 — Mensagens e testes sem API",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## O que trafega: `ModelRequest` e `ModelResponse`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### As partes por dentro",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Memória de conversa: `message_history`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### Gravar e recuperar: `ModelMessagesTypeAdapter`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Testes sem API: `TestModel` e `FunctionModel`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "### Inspecionar uma execução: `capture_run_messages`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Testando o agente de produção: `.override` e `ALLOW_MODEL_REQUESTS`",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "secao",
+   "titulo": "## Recapitulando",
+   "apos": "capítulo novo"
+  },
+  {
+   "tipo": "armadilha",
+   "titulo": "continuar com new_messages()",
+   "apos": "## Memória de conversa: `message_history`"
+  },
+  {
+   "tipo": "armadilha",
+   "titulo": "FunctionModel sem caminho de texto final",
+   "apos": "## Testes sem API: `TestModel` e `FunctionModel`"
+  },
+  {
+   "tipo": "exercicio",
+   "titulo": "0.5.1 a 0.5.12",
+   "apos": "4 blocos Faça você mesmo"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-5-ciclo-de-mensagens.png",
+   "apos": "introdução"
+  },
+  {
+   "tipo": "imagem",
+   "titulo": "cap0-5-override-no-teste.png",
+   "apos": "## Testando o agente de produção: `.override` e `ALLOW_MODEL_REQUESTS`"
+  }
+ ],
+ "imagens": [
+  "modulo-00/img/cap0-5-ciclo-de-mensagens.png",
+  "modulo-00/img/cap0-5-override-no-teste.png"
+ ],
+ "correcoes_sugeridas": []
+}

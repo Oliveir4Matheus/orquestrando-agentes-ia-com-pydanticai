@@ -1,0 +1,6 @@
+[
+ {"arquivo": "modulo-00/img/cap0-4-anatomia-de-uma-execucao.png",
+  "prompt": "Diagrama da esquerda para a direita com quatro blocos ligados por setas, sem cruzamento. Bloco 'prompt' à esquerda. Seta até o bloco 'Agent', que tem duas etiquetas menores dentro: 'modelo' e 'instructions'. Seta rotulada 'requisição' até o bloco 'modelo de linguagem'. Seta de volta rotulada 'resposta' até o bloco 'resultado' à direita, que tem duas etiquetas menores dentro: '.output' e '.usage'. Nenhum outro texto além desses rótulos."},
+ {"arquivo": "modulo-00/img/cap0-4-tres-formas-de-executar.png",
+  "prompt": "Diagrama com um bloco 'Agent' à esquerda e três setas horizontais paralelas, sem cruzamento, saindo dele para três blocos empilhados à direita. Seta de cima rotulada '.run_sync' até o bloco 'espera e devolve tudo'. Seta do meio rotulada '.run' até o bloco 'await, devolve tudo'. Seta de baixo rotulada '.run_stream' até o bloco 'entrega aos pedaços', que tem uma etiqueta laranja menor dentro: '.stream_text'. Nenhum outro texto além desses rótulos."}
+]

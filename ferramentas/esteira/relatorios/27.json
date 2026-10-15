@@ -1,0 +1,6 @@
+{"capitulo": "27",
+ "simbolos": [],
+ "adicoes": [{"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Guardrails em camadas](img/cap27-guardrails-em-camadas.png)"},
+  {"tipo": "secao", "titulo": "Quando o próprio classificador erra o formato", "apos": "O cliente vê apenas a segunda resposta."}],
+ "imagens": [],
+ "correcoes_sugeridas": []}

@@ -1,0 +1,19 @@
+{"capitulo": "6",
+ "simbolos": [
+  {"chave": "Field(ge=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Field(ge=)`", "obs": ""},
+  {"chave": "Field(le=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `Field(le=)`", "obs": ""},
+  {"chave": "ModelSettings(thinking=)", "status": "explicado_aqui", "onde": "Por dentro do PydanticAI — `ModelSettings(thinking=)`", "obs": ""},
+  {"chave": ".output_tools", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "Agent(output_type=)", "status": "apontado_para", "onde": "capítulo 0.6", "obs": ""},
+  {"chave": "BaseModel", "status": "apontado_para", "onde": "capítulo 0.3", "obs": ""},
+  {"chave": "Field", "status": "apontado_para", "onde": "capítulo 0.3", "obs": ""},
+  {"chave": "ModelSettings", "status": "apontado_para", "onde": "capítulo 0.4", "obs": ""},
+  {"chave": "py:anotação de tipo", "status": "apontado_para", "onde": "capítulo 0.2", "obs": ""}],
+ "adicoes": [
+  {"tipo": "antes_de_comecar", "titulo": "Antes de começar — PydanticAI neste capítulo", "apos": "![Cadeia e árvore de pensamentos](img/cap6-cadeia-e-arvore.png)"},
+  {"tipo": "por_dentro", "titulo": "Field(ge=)", "apos": "Há dois agentes com papéis diferentes."},
+  {"tipo": "por_dentro", "titulo": "Field(le=)", "apos": "Há dois agentes com papéis diferentes."},
+  {"tipo": "por_dentro", "titulo": "ModelSettings(thinking=)", "apos": "Os níveis vão de `\"minimal\"` a `\"xhigh\"`"},
+  {"tipo": "secao", "titulo": "nota_fora_da_faixa.py (validação do limite e nova tentativa)", "apos": "A alternativa que a primeira intuição talvez favorecesse"}],
+ "imagens": [],
+ "correcoes_sugeridas": []}
