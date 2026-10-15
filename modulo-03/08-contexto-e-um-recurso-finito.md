@@ -18,7 +18,22 @@ O princípio que decorre disso orienta o resto do módulo: **procure o menor con
 
 ## Medindo o crescimento
 
-Antes de podar, vamos medir. A Casa Verde agora devolve, junto com o status do pedido, o rastreio completo, com uma linha por movimentação. Veja a nova versão do atendente. Ela cria o agente por meio de uma função, `criar_agente`, para que possamos montar variações dele nas próximas seções.
+Antes de podar, vamos medir. A Casa Verde agora devolve, junto com o status do pedido, o rastreio completo, com uma linha por movimentação. Comece acrescentando ao final de `loja.py` a função que produz esse histórico:
+
+*loja.py*
+
+```python
+def buscar_rastreio(codigo: str) -> str:
+    """Histórico detalhado de movimentações do pedido, com uma linha por evento."""
+    return "\n".join(
+        f"{dia:02d}/09 {hora}:00 - pedido {codigo}: movimentação registrada no centro de distribuição {dia}"
+        for dia, hora in zip(range(10, 22), range(8, 20))
+    )
+```
+
+Os dois `range` produzem doze dias e doze horários. `zip` forma os pares — dia 10 com hora 8, dia 11 com hora 9 e assim por diante — e a expressão geradora cria uma linha para cada movimentação. Por fim, `"\n".join(...)` reúne as doze linhas em uma única string. Esse volume é intencional: ele nos permite enxergar quanto um resultado de ferramenta pesa quando permanece no histórico.
+
+Agora veja a nova versão do atendente. Ela chama `buscar_rastreio` depois de encontrar o pedido e cria o agente por meio de uma função, `criar_agente`, para que possamos montar variações dele nas próximas seções.
 
 *atendimento.py*
 
@@ -52,7 +67,7 @@ def criar_agente(**opcoes) -> Agent:
 agente = criar_agente()
 ```
 
-O arquivo `loja.py` do Módulo 3 ganhou a função `buscar_rastreio`, que devolve doze linhas de movimentação por pedido. Para observar o crescimento com saída reproduzível, usamos um modelo simulado que consulta o pedido citado na pergunta e responde com a primeira linha do resultado, e uma função auxiliar que conduz uma conversa e imprime o tamanho do contexto a cada turno.
+Para observar o crescimento com saída reproduzível, usamos um modelo simulado que consulta o pedido citado na pergunta e responde com a primeira linha do resultado, e uma função auxiliar que conduz uma conversa e imprime o tamanho do contexto a cada turno.
 
 *sessao.py*
 
