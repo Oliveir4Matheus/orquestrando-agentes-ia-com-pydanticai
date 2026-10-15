@@ -67,7 +67,30 @@ def criar_agente(**opcoes) -> Agent:
 agente = criar_agente()
 ```
 
-Para observar o crescimento com saída reproduzível, usamos um modelo simulado que consulta o pedido citado na pergunta e responde com a primeira linha do resultado, e uma função auxiliar que conduz uma conversa e imprime o tamanho do contexto a cada turno.
+Para observar o crescimento com saída reproduzível, usamos um modelo simulado que consulta o pedido citado na pergunta e responde com a primeira linha do resultado. Crie o arquivo auxiliar abaixo na mesma pasta dos demais códigos do módulo:
+
+*modelo_atendente.py*
+
+```python
+import re
+
+from pydantic_ai import ModelResponse, TextPart, ToolCallPart
+from pydantic_ai.messages import ToolReturnPart
+from pydantic_ai.models.function import AgentInfo
+
+
+def modelo_atendente(mensagens, info: AgentInfo) -> ModelResponse:
+    """Modelo simulado: consulta o pedido citado e responde com o status."""
+    ultima = mensagens[-1].parts[-1]
+    if isinstance(ultima, ToolReturnPart):
+        return ModelResponse(parts=[TextPart(f"Segue o status: {ultima.content.splitlines()[0]}")])
+    codigo = re.search(r"\d{4}", ultima.content).group()
+    return ModelResponse(parts=[ToolCallPart("consultar_pedido", {"codigo": codigo})])
+```
+
+O modelo tem dois caminhos. Quando recebe a pergunta do cliente, extrai dela o código de quatro dígitos e solicita a ferramenta `consultar_pedido`. Quando a última parte já é um `ToolReturnPart`, a ferramenta respondeu; então o modelo devolve apenas a primeira linha do resultado. As perguntas deste exemplo sempre contêm um código de pedido, por isso a busca com `re.search` pode usar `.group()` diretamente.
+
+Agora uma função auxiliar conduz a conversa e imprime o tamanho do contexto a cada turno.
 
 *sessao.py*
 
@@ -104,8 +127,6 @@ from sessao import conversar
 
 conversar(agente)
 ```
-
-(O arquivo `modelo_atendente.py`, que simula o modelo, está na pasta `codigo/` do módulo. Ele não ensina nada novo; você pode ignorá-lo.)
 
 Saída:
 
