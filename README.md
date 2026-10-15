@@ -71,6 +71,14 @@ O script pula as imagens já existentes, usa três processos em paralelo e alter
 
 Cada capítulo termina com a lista das fontes das quais o conteúdo foi extraído (artigos, guias técnicos e documentação), e todo o texto é original, escrito no padrão da skill. A documentação do PydanticAI usada como referência está na pasta `docs/`, na raiz do projeto.
 
+## Contribuições
+
+Se este livro ajudou você, considere apoiar sua continuidade. Toda contribuição é voluntária e ajuda a manter o conteúdo gratuito, atualizado e disponível para estudo.
+
+Escaneie o QR Code abaixo para contribuir via Pix:
+
+<img src="qrcode-pix.png" alt="QR Code para contribuição via Pix" width="280">
+
 ## Licença
 
 Este livro é disponibilizado sob uma **Licença de Uso Educacional e Não Comercial**.
